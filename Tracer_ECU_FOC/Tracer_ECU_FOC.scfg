@@ -27,7 +27,7 @@
             <item enabled="true" id="srcEOI"/>
         </option>
         <option enabled="true" id="mainfrequency" selection="textinputitem">
-            <item enabled="true" id="textinputitem" input="8" value="8.000000"/>
+            <item enabled="true" id="textinputitem" input="20" value="20.000000"/>
         </option>
         <option enabled="true" id="mainwaittime" selection="textinputitem">
             <item enabled="true" id="textinputitem" input="9980" value="9980.000000"/>
@@ -52,68 +52,68 @@
         <option enabled="false" id="locofrequency" selection="textinputitem">
             <item enabled="true" id="textinputitem" input="" value="240"/>
         </option>
-        <option enabled="true" id="iwdtclockenable" selection="check">
+        <option enabled="true" id="iwdtclockenable" selection="uncheck">
             <item enabled="true" id="check"/>
             <item enabled="true" id="uncheck"/>
         </option>
-        <option enabled="true" id="iwdtfrequency" selection="textinputitem">
+        <option enabled="false" id="iwdtfrequency" selection="textinputitem">
             <item enabled="true" id="textinputitem" input="" value="120"/>
         </option>
         <option enabled="true" id="pllswitcher" selection="pllmain">
-            <item enabled="true" id="pllmain" input="" value="8.0"/>
+            <item enabled="true" id="pllmain" input="" value="20.0"/>
             <item enabled="false" id="pllhoco" input="" value="16"/>
         </option>
         <option enabled="true" id="plldivider" selection="div1-1">
             <item enabled="true" id="div1-1"/>
-            <item enabled="false" id="div1-2"/>
+            <item enabled="true" id="div1-2"/>
             <item enabled="false" id="div1-3"/>
         </option>
-        <option enabled="true" id="pllmul" selection="mul25-1">
-            <item enabled="false" id="mul10-1"/>
-            <item enabled="false" id="mul10_5-1"/>
-            <item enabled="false" id="mul11-1"/>
-            <item enabled="false" id="mul11_5-1"/>
-            <item enabled="false" id="mul12-1"/>
+        <option enabled="true" id="pllmul" selection="mul12-1">
+            <item enabled="true" id="mul10-1"/>
+            <item enabled="true" id="mul10_5-1"/>
+            <item enabled="true" id="mul11-1"/>
+            <item enabled="true" id="mul11_5-1"/>
+            <item enabled="true" id="mul12-1"/>
             <item enabled="false" id="mul12_5-1"/>
             <item enabled="false" id="mul13-1"/>
             <item enabled="false" id="mul13_5-1"/>
             <item enabled="false" id="mul14-1"/>
             <item enabled="false" id="mul14_5-1"/>
-            <item enabled="true" id="mul15-1"/>
-            <item enabled="true" id="mul15_5-1"/>
-            <item enabled="true" id="mul16-1"/>
-            <item enabled="true" id="mul16_5-1"/>
-            <item enabled="true" id="mul17-1"/>
-            <item enabled="true" id="mul17_5-1"/>
-            <item enabled="true" id="mul18-1"/>
-            <item enabled="true" id="mul18_5-1"/>
-            <item enabled="true" id="mul19-1"/>
-            <item enabled="true" id="mul19_5-1"/>
-            <item enabled="true" id="mul20-1"/>
-            <item enabled="true" id="mul20_5-1"/>
-            <item enabled="true" id="mul21-1"/>
-            <item enabled="true" id="mul21_5-1"/>
-            <item enabled="true" id="mul22-1"/>
-            <item enabled="true" id="mul22_5-1"/>
-            <item enabled="true" id="mul23-1"/>
-            <item enabled="true" id="mul23_5-1"/>
-            <item enabled="true" id="mul24-1"/>
-            <item enabled="true" id="mul24_5-1"/>
-            <item enabled="true" id="mul25-1"/>
-            <item enabled="true" id="mul25_5-1"/>
-            <item enabled="true" id="mul26-1"/>
-            <item enabled="true" id="mul26_5-1"/>
-            <item enabled="true" id="mul27-1"/>
-            <item enabled="true" id="mul27_5-1"/>
-            <item enabled="true" id="mul28-1"/>
-            <item enabled="true" id="mul28_5-1"/>
-            <item enabled="true" id="mul29-1"/>
-            <item enabled="true" id="mul29_5-1"/>
-            <item enabled="true" id="mul30-1"/>
+            <item enabled="false" id="mul15-1"/>
+            <item enabled="false" id="mul15_5-1"/>
+            <item enabled="false" id="mul16-1"/>
+            <item enabled="false" id="mul16_5-1"/>
+            <item enabled="false" id="mul17-1"/>
+            <item enabled="false" id="mul17_5-1"/>
+            <item enabled="false" id="mul18-1"/>
+            <item enabled="false" id="mul18_5-1"/>
+            <item enabled="false" id="mul19-1"/>
+            <item enabled="false" id="mul19_5-1"/>
+            <item enabled="false" id="mul20-1"/>
+            <item enabled="false" id="mul20_5-1"/>
+            <item enabled="false" id="mul21-1"/>
+            <item enabled="false" id="mul21_5-1"/>
+            <item enabled="false" id="mul22-1"/>
+            <item enabled="false" id="mul22_5-1"/>
+            <item enabled="false" id="mul23-1"/>
+            <item enabled="false" id="mul23_5-1"/>
+            <item enabled="false" id="mul24-1"/>
+            <item enabled="false" id="mul24_5-1"/>
+            <item enabled="false" id="mul25-1"/>
+            <item enabled="false" id="mul25_5-1"/>
+            <item enabled="false" id="mul26-1"/>
+            <item enabled="false" id="mul26_5-1"/>
+            <item enabled="false" id="mul27-1"/>
+            <item enabled="false" id="mul27_5-1"/>
+            <item enabled="false" id="mul28-1"/>
+            <item enabled="false" id="mul28_5-1"/>
+            <item enabled="false" id="mul29-1"/>
+            <item enabled="false" id="mul29_5-1"/>
+            <item enabled="false" id="mul30-1"/>
         </option>
         <option enabled="true" id="sckswitcher" selection="pll">
-            <item enabled="true" id="pll" input="" value="2.0E8"/>
-            <item enabled="true" id="main" input="" value="8000000.0"/>
+            <item enabled="true" id="pll" input="" value="2.4E8"/>
+            <item enabled="true" id="main" input="" value="2.0E7"/>
             <item enabled="false" id="hoco" input="" value="16000000"/>
             <item enabled="false" id="loco" input="" value="240000"/>
         </option>
@@ -126,8 +126,8 @@
             <item enabled="true" id="comboBox1-32"/>
             <item enabled="true" id="comboBox1-64"/>
         </option>
-        <option enabled="true" id="iclkdivider" selection="comboBox1-1">
-            <item enabled="true" id="comboBox1-1"/>
+        <option enabled="true" id="iclkdivider" selection="comboBox1-2">
+            <item enabled="false" id="comboBox1-1"/>
             <item enabled="true" id="comboBox1-2"/>
             <item enabled="true" id="comboBox1-4"/>
             <item enabled="true" id="comboBox1-8"/>
@@ -153,8 +153,8 @@
             <item enabled="true" id="comboBox1-32"/>
             <item enabled="true" id="comboBox1-64"/>
         </option>
-        <option enabled="true" id="pclkcdivider" selection="comboBox1-1">
-            <item enabled="true" id="comboBox1-1"/>
+        <option enabled="true" id="pclkcdivider" selection="comboBox1-2">
+            <item enabled="false" id="comboBox1-1"/>
             <item enabled="true" id="comboBox1-2"/>
             <item enabled="false" id="comboBox1-4"/>
             <item enabled="false" id="comboBox1-8"/>
@@ -189,28 +189,28 @@
             <item enabled="true" id="comboBox1-2"/>
         </option>
         <option enabled="true" id="fclk" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="50.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="60.0"/>
         </option>
         <option enabled="true" id="iclk" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="200.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="120.0"/>
         </option>
         <option enabled="true" id="pclka" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="100.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="120.0"/>
         </option>
         <option enabled="true" id="pclkb" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="50.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="60.0"/>
         </option>
         <option enabled="true" id="pclkc" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="200.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="120.0"/>
         </option>
         <option enabled="true" id="pclkd" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="50.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="60.0"/>
         </option>
         <option enabled="true" id="bck" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="50.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="60.0"/>
         </option>
         <option enabled="false" id="bckpin" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="50.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="60.0"/>
         </option>
         <option enabled="false" id="caclclk" selection="textoutputitem">
             <item enabled="true" id="textoutputitem" input="" value="240"/>
@@ -218,11 +218,11 @@
         <option enabled="false" id="cachclk" selection="textoutputitem">
             <item enabled="true" id="textoutputitem" input="" value="16"/>
         </option>
-        <option enabled="true" id="cacilclk" selection="textoutputitem">
+        <option enabled="false" id="cacilclk" selection="textoutputitem">
             <item enabled="true" id="textoutputitem" input="" value="120"/>
         </option>
         <option enabled="true" id="cacmclk" selection="textoutputitem">
-            <item enabled="true" id="textoutputitem" input="" value="8.0"/>
+            <item enabled="true" id="textoutputitem" input="" value="20.0"/>
         </option>
         <option enabled="true" id="avccinput" selection="textinputitem">
             <item enabled="true" id="textinputitem" input="3.3" value="3.300"/>
@@ -297,8 +297,8 @@
         <Item currentVect="79" id="ICU_IRQ15" priority="15" usedState="使用中"/>
         <Item currentVect="84" id="SCI5_RXI5" priority="15" usedState="未使用"/>
         <Item currentVect="85" id="SCI5_TXI5" priority="15" usedState="未使用"/>
-        <Item currentVect="86" id="SCI6_RXI6" priority="15" usedState="使用中"/>
-        <Item currentVect="87" id="SCI6_TXI6" priority="15" usedState="使用中"/>
+        <Item currentVect="86" id="SCI6_RXI6" priority="15" usedState="未使用"/>
+        <Item currentVect="87" id="SCI6_TXI6" priority="15" usedState="未使用"/>
         <Item currentVect="88" id="LVD1_LVD1" priority="15" usedState="未使用"/>
         <Item currentVect="89" id="LVD2_LVD2" priority="15" usedState="未使用"/>
         <Item currentVect="90" id="USB0_USBR0" priority="15" usedState="未使用"/>
@@ -313,7 +313,7 @@
         <Item currentVect="111" groupchild="&lt;br&gt;0-POEGGAI&lt;br&gt;1-POEGGBI&lt;br&gt;2-POEGGCI&lt;br&gt;3-POEGGDI&lt;br&gt;8-OEI5&lt;br&gt;9-OEI1&lt;br&gt;10-OEI2&lt;br&gt;11-OEI3&lt;br&gt;12-OEI4&lt;br&gt;13-TEI0&lt;br&gt;14-EEI0&lt;br&gt;18-S12CMPAI2&lt;br&gt;19-S12CMPBI2&lt;br&gt;20-S12CMPAI&lt;br&gt;21-S12CMPBI&lt;br&gt;22-S12CMPAI1&lt;br&gt;23-S12CMPBI1&lt;br&gt;24-TEI8&lt;br&gt;25-ERI8&lt;br&gt;26-TEI9&lt;br&gt;27-ERI9" id="BL1" priority="15" usedState="未使用"/>
         <Item currentVect="112" groupchild="&lt;br&gt;12-TEI11&lt;br&gt;13-ERI11&lt;br&gt;16-SPII0&lt;br&gt;17-SPEI0" id="AL0" priority="15" usedState="使用中"/>
         <Item currentVect="114" id="SCI11_RXI11" priority="15" usedState="未使用"/>
-        <Item currentVect="115" id="SCI11_TXI11" priority="15" usedState="使用中"/>
+        <Item currentVect="115" id="SCI11_TXI11" priority="15" usedState="未使用"/>
         <Item currentVect="116" id="SCI12_RXI12" priority="15" usedState="使用中"/>
         <Item currentVect="117" id="SCI12_TXI12" priority="15" usedState="使用中"/>
         <Item currentVect="120" id="DMAC_DMAC0I" priority="15" usedState="未使用"/>
@@ -426,7 +426,6 @@
         <pinItem allocation="64" comments="" direction="None" id="IRQ15" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="33" comments="" direction="O" id="PB2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="30" comments="" direction="O" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="41" comments="" direction="None" id="TXD11" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="100" comments="" direction="None" id="IRQ0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="7" comments="" direction="None" id="IRQ4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="57" comments="" direction="None" id="IRQ5" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -438,7 +437,6 @@
         <pinItem allocation="85" comments="" direction="None" id="AN100" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="84" comments="" direction="None" id="AN101" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="83" comments="" direction="None" id="AN102" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="98" comments="" direction="None" id="RXD6" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="82" comments="" direction="None" id="AN103" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="55" comments="" direction="None" id="MTIOC4A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="54" comments="" direction="None" id="MTIOC4B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -468,7 +466,6 @@
         <pinItem allocation="61" comments="" direction="None" id="MTIOC0A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="34" comments="" direction="None" id="MTIOC0C" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="78" comments="" direction="None" id="AN203" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="97" comments="" direction="None" id="TXD6" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="77" comments="" direction="None" id="AN206" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="76" comments="" direction="None" id="AN207" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="75" comments="" direction="None" id="AN208" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -476,7 +473,6 @@
         <pinItem allocation="81" comments="" direction="None" id="AN200" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="80" comments="" direction="None" id="AN201" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="79" comments="" direction="None" id="AN202" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="40" comments="" direction="None" id="RXD11" isUsedBySoftware="false" locked="false" operationMode="" status="4"/>
         <pinItem allocation="36" comments="" direction="None" id="MISOA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="13" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="38" comments="" direction="None" id="SSLA0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
@@ -511,7 +507,7 @@
     <tool id="SWComponent" version="1.0.0.0">
         <configuration apiMode="FULL_API" id="74585e22-8e4a-4bc7-b197-45cc14d4d104" inuse="true" name="Config_MTU3_MTU4">
             <allocatable id="MTU3">
-                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <option enabled="true" id="Mode" selection="Cmppwm3">
                     <item id="Cmppwm1" input="" vlaue="0"/>
                     <item id="Cmppwm2" input="" vlaue="0"/>
@@ -558,7 +554,7 @@
                     <item id="PCLK_32" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="PeriodValue" selection="PeriodValue">
-                    <item id="PeriodValue" input="100" vlaue="20000"/>
+                    <item id="PeriodValue" input="100" vlaue="12000"/>
                 </option>
                 <option enabled="true" id="Unit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -571,7 +567,7 @@
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="DdTmValue" selection="DdTmValue">
-                    <item id="DdTmValue" input="10" vlaue="2000"/>
+                    <item id="DdTmValue" input="10" vlaue="1200"/>
                 </option>
                 <option enabled="true" id="Unit1" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -580,7 +576,7 @@
                     <item id="cnt" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TGRAValue" selection="TGRAValue">
-                    <item id="TGRAValue" input="100" vlaue="12000"/>
+                    <item id="TGRAValue" input="100" vlaue="7200"/>
                 </option>
                 <option enabled="true" id="TGRBValue" selection="TGRBValue">
                     <item id="TGRBValue" input="100" vlaue="100"/>
@@ -977,7 +973,7 @@
         </configuration>
         <configuration apiMode="FULL_API" id="0661a015-a1a2-49b5-839f-e387f2e8111a" inuse="true" name="Config_MTU6_MTU7">
             <allocatable id="MTU6">
-                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <option enabled="true" id="Mode" selection="Cmppwm3">
                     <item id="Cmppwm1" input="" vlaue="0"/>
                     <item id="Cmppwm2" input="" vlaue="0"/>
@@ -1024,7 +1020,7 @@
                     <item id="PCLK_32" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="PeriodValue" selection="PeriodValue">
-                    <item id="PeriodValue" input="100" vlaue="20000"/>
+                    <item id="PeriodValue" input="100" vlaue="12000"/>
                 </option>
                 <option enabled="true" id="Unit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -1037,7 +1033,7 @@
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="DdTmValue" selection="DdTmValue">
-                    <item id="DdTmValue" input="10" vlaue="2000"/>
+                    <item id="DdTmValue" input="10" vlaue="1200"/>
                 </option>
                 <option enabled="true" id="Unit1" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -1046,7 +1042,7 @@
                     <item id="cnt" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TGRAValue" selection="TGRAValue">
-                    <item id="TGRAValue" input="100" vlaue="12000"/>
+                    <item id="TGRAValue" input="100" vlaue="7200"/>
                 </option>
                 <option enabled="true" id="TGRBValue" selection="TGRBValue">
                     <item id="TGRBValue" input="100" vlaue="100"/>
@@ -1476,7 +1472,7 @@
         <configuration apiMode="FULL_API" id="68f67762-04b6-472b-8385-020de4b5de4b" inuse="true" name="Config_WDT">
             <allocatable id="WDT">
                 <osocket id="OFS0Byte" value="true"/>
-                <isocket id="PCLKBClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <isocket id="PCLKBClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                 <option enabled="true" id="StartMdSel" selection="RegMd">
                     <item id="RegMd" input="" vlaue="0"/>
                     <item id="AutoMd" input="" vlaue="0"/>
@@ -3173,7 +3169,7 @@
         <configuration apiMode="FULL_API" id="3e5b9b1f-0354-4b3e-bda0-5df73cf7661c" inuse="true" name="Config_ICU">
             <allocatable id="ICU">
                 <allocatable id="IRQ0">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3211,7 +3207,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ1">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3249,7 +3245,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ2">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3287,7 +3283,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ3">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3325,7 +3321,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ4">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3363,7 +3359,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ5">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3401,7 +3397,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ6">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3439,7 +3435,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ7">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3477,7 +3473,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ8">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3515,7 +3511,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ9">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3553,7 +3549,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ10">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3591,7 +3587,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ11">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3629,7 +3625,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ12">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3667,7 +3663,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ13">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3705,7 +3701,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ14">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Disable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3743,7 +3739,7 @@
                     </option>
                 </allocatable>
                 <allocatable id="IRQ15">
-                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                    <isocket id="IrqFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                     <option enabled="true" id="EnableIrq" selection="Enable">
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
@@ -3780,7 +3776,7 @@
                         <item id="Level15" input="" vlaue="0"/>
                     </option>
                 </allocatable>
-                <isocket id="NmiFilterClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <isocket id="NmiFilterClock" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                 <option enabled="true" id="EnableSwInt" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
@@ -3833,13 +3829,13 @@
             <allocatable id="S12AD0">
                 <isocket id="AN101Neg" selection="Clock.tool_clock_an101" value="1"/>
                 <isocket id="PGAVSS0Neg" selection="Clock.tool_clock_pgavss0" value="1"/>
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountADClock" selection="Clock.tool_clock_pclkd" value="5.0E7"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountADClock" selection="Clock.tool_clock_pclkd" value="6.0E7"/>
                 <isocket id="PGAVSS1Neg" selection="Clock.tool_clock_pgavss1" value="1"/>
                 <isocket id="AN102Neg" selection="Clock.tool_clock_an102" value="1"/>
                 <isocket id="AN100Neg" selection="Clock.tool_clock_an100" value="1"/>
                 <isocket id="AN001Neg" selection="Clock.tool_clock_an001" value="1"/>
-                <isocket id="CountClockB" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <isocket id="CountClockB" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                 <isocket id="AVCC" value="0"/>
                 <isocket id="AN000Neg" selection="Clock.tool_clock_an000" value="1"/>
                 <isocket id="AN002Neg" selection="Clock.tool_clock_an002" value="1"/>
@@ -4179,22 +4175,22 @@
                     <item id="BetweenRef0Ref1" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="DSH_Sampling" selection="DSH_Sampling">
-                    <item id="DSH_Sampling" input="0.54" vlaue="27"/>
+                    <item id="DSH_Sampling" input="0.54" vlaue="32"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
-                    <item id="ANx00_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx00_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
-                    <item id="ANx01_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx01_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
-                    <item id="ANx02_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx02_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx03_Sampling" selection="ANx03_Sampling">
-                    <item id="ANx03_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx03_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="false" id="ANx07_Sampling" selection="ANx07_Sampling">
-                    <item id="ANx07_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx07_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ADSTpin" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
@@ -4240,13 +4236,13 @@
             <allocatable id="S12AD1">
                 <isocket id="AN101Neg" selection="Clock.tool_clock_an101" value="1"/>
                 <isocket id="PGAVSS0Neg" selection="Clock.tool_clock_pgavss0" value="1"/>
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountADClock" selection="Clock.tool_clock_pclkd" value="5.0E7"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountADClock" selection="Clock.tool_clock_pclkd" value="6.0E7"/>
                 <isocket id="PGAVSS1Neg" selection="Clock.tool_clock_pgavss1" value="1"/>
                 <isocket id="AN102Neg" selection="Clock.tool_clock_an102" value="1"/>
                 <isocket id="AN100Neg" selection="Clock.tool_clock_an100" value="1"/>
                 <isocket id="AN001Neg" selection="Clock.tool_clock_an001" value="1"/>
-                <isocket id="CountClockB" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <isocket id="CountClockB" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                 <isocket id="AVCC" value="0"/>
                 <isocket id="AN000Neg" selection="Clock.tool_clock_an000" value="1"/>
                 <isocket id="AN002Neg" selection="Clock.tool_clock_an002" value="1"/>
@@ -4586,22 +4582,22 @@
                     <item id="BetweenRef0Ref1" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="DSH_Sampling" selection="DSH_Sampling">
-                    <item id="DSH_Sampling" input="0.54" vlaue="27"/>
+                    <item id="DSH_Sampling" input="0.54" vlaue="32"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
-                    <item id="ANx00_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx00_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
-                    <item id="ANx01_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx01_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
-                    <item id="ANx02_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx02_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx03_Sampling" selection="ANx03_Sampling">
-                    <item id="ANx03_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx03_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="false" id="ANx07_Sampling" selection="ANx07_Sampling">
-                    <item id="ANx07_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx07_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ADSTpin" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
@@ -4647,13 +4643,13 @@
             <allocatable id="S12AD2">
                 <isocket id="AN101Neg" selection="Clock.tool_clock_an101" value="1"/>
                 <isocket id="PGAVSS0Neg" selection="Clock.tool_clock_pgavss0" value="1"/>
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountADClock" selection="Clock.tool_clock_pclkd" value="5.0E7"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountADClock" selection="Clock.tool_clock_pclkd" value="6.0E7"/>
                 <isocket id="PGAVSS1Neg" selection="Clock.tool_clock_pgavss1" value="1"/>
                 <isocket id="AN102Neg" selection="Clock.tool_clock_an102" value="1"/>
                 <isocket id="AN100Neg" selection="Clock.tool_clock_an100" value="1"/>
                 <isocket id="AN001Neg" selection="Clock.tool_clock_an001" value="1"/>
-                <isocket id="CountClockB" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <isocket id="CountClockB" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
                 <isocket id="AVCC" value="0"/>
                 <isocket id="AN000Neg" selection="Clock.tool_clock_an000" value="1"/>
                 <isocket id="AN002Neg" selection="Clock.tool_clock_an002" value="1"/>
@@ -5023,37 +5019,37 @@
                     <item id="BetweenRef0Ref1" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
-                    <item id="ANx00_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx00_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
-                    <item id="ANx01_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx01_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
-                    <item id="ANx02_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx02_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx03_Sampling" selection="ANx03_Sampling">
-                    <item id="ANx03_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx03_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx06_Sampling" selection="ANx06_Sampling">
-                    <item id="ANx06_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx06_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx07_Sampling" selection="ANx07_Sampling">
-                    <item id="ANx07_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx07_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx08_Sampling" selection="ANx08_Sampling">
-                    <item id="ANx08_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx08_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx09_Sampling" selection="ANx09_Sampling">
-                    <item id="ANx09_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx09_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx10_Sampling" selection="ANx10_Sampling">
-                    <item id="ANx10_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx10_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANx11_Sampling" selection="ANx11_Sampling">
-                    <item id="ANx11_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANx11_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ANLarger_Sampling" selection="ANLarger_Sampling">
-                    <item id="ANLarger_Sampling" input="0.54" vlaue="27"/>
+                    <item id="ANLarger_Sampling" input="0.54" vlaue="33"/>
                 </option>
                 <option enabled="true" id="ADSTpin" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
@@ -5173,9 +5169,9 @@
         </configuration>
         <configuration apiMode="FULL_API" id="10463c90-4f56-4477-b175-19d4691d80d6" inuse="true" name="Config_GPT0">
             <allocatable id="GPT0">
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.0E8"/>
-                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.2E8"/>
+                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <option enabled="true" id="Mode" selection="TrianglePwm2">
                     <item id="SawPwmMode" input="" vlaue="0"/>
                     <item id="SawOneShotMode" input="" vlaue="0"/>
@@ -5201,7 +5197,7 @@
                     <item id="GTETRGD" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TmrPrd" selection="TmrPrd">
-                    <item id="TmrPrd" input="100" vlaue="10000"/>
+                    <item id="TmrPrd" input="100" vlaue="6000"/>
                 </option>
                 <option enabled="true" id="GptUnit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -6677,9 +6673,9 @@
         </configuration>
         <configuration apiMode="FULL_API" id="b192e58b-8b93-47af-9aa7-f52c0465a81a" inuse="true" name="Config_GPT1">
             <allocatable id="GPT1">
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.0E8"/>
-                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.2E8"/>
+                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <option enabled="true" id="Mode" selection="TrianglePwm2">
                     <item id="SawPwmMode" input="" vlaue="0"/>
                     <item id="SawOneShotMode" input="" vlaue="0"/>
@@ -6705,7 +6701,7 @@
                     <item id="GTETRGD" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TmrPrd" selection="TmrPrd">
-                    <item id="TmrPrd" input="100" vlaue="10000"/>
+                    <item id="TmrPrd" input="100" vlaue="6000"/>
                 </option>
                 <option enabled="true" id="GptUnit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -8181,9 +8177,9 @@
         </configuration>
         <configuration apiMode="FULL_API" id="37a7b769-512c-4539-9312-512a3c8623a9" inuse="true" name="Config_GPT2">
             <allocatable id="GPT2">
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.0E8"/>
-                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.2E8"/>
+                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <option enabled="true" id="Mode" selection="TrianglePwm2">
                     <item id="SawPwmMode" input="" vlaue="0"/>
                     <item id="SawOneShotMode" input="" vlaue="0"/>
@@ -8209,7 +8205,7 @@
                     <item id="GTETRGD" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TmrPrd" selection="TmrPrd">
-                    <item id="TmrPrd" input="100" vlaue="10000"/>
+                    <item id="TmrPrd" input="100" vlaue="6000"/>
                 </option>
                 <option enabled="true" id="GptUnit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -9741,7 +9737,7 @@
                         <item id="SPND" input="" vlaue="0"/>
                     </option>
                 </allocatable>
-                <isocket id="PCLKA" selection="Clock.tool_clock_pclka" value="1.0E8"/>
+                <isocket id="PCLKA" selection="Clock.tool_clock_pclka" value="1.2E8"/>
                 <option enabled="true" id="BufWid" selection="Word">
                     <item id="Byte" input="" vlaue="0"/>
                     <item id="Word" input="" vlaue="0"/>
@@ -9757,7 +9753,7 @@
                     <item id="ParityOdd" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="Bitrate" selection="Bitrate">
-                    <item id="Bitrate" input="1000" vlaue="49"/>
+                    <item id="Bitrate" input="1000" vlaue="59"/>
                 </option>
                 <option enabled="true" id="CKdelay" selection="1RSPCK">
                     <item id="1RSPCK" input="" vlaue="0"/>
@@ -9946,7 +9942,7 @@
         </configuration>
         <configuration apiMode="FULL_API" id="f80f3c89-5306-41b7-bb28-a9c7c1ec5266" inuse="true" name="Config_MTU0">
             <allocatable id="MTU0">
-                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <isocket id="TPU_PCLK" value="6.0"/>
                 <option enabled="true" id="Sync" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
@@ -10056,7 +10052,7 @@
                     <item id="OutT" input="" vlaue="0"/>
                 </option>
                 <option enabled="false" id="PeriodValue" selection="PeriodValue">
-                    <item id="PeriodValue" input="100" vlaue="19999"/>
+                    <item id="PeriodValue" input="100" vlaue="11999"/>
                 </option>
                 <option enabled="false" id="Unit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -10340,7 +10336,7 @@
         </configuration>
         <configuration apiMode="FULL_API" id="d1426e31-89d5-4092-a2bb-31d8cab52074" inuse="true" name="Config_MTU9">
             <allocatable id="MTU9">
-                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="MTU_PCLK" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <isocket id="TPU_PCLK" value="6.0"/>
                 <option enabled="true" id="Sync" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
@@ -10450,7 +10446,7 @@
                     <item id="OutT" input="" vlaue="0"/>
                 </option>
                 <option enabled="false" id="PeriodValue" selection="PeriodValue">
-                    <item id="PeriodValue" input="100" vlaue="19999"/>
+                    <item id="PeriodValue" input="100" vlaue="11999"/>
                 </option>
                 <option enabled="false" id="Unit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -10734,8 +10730,8 @@
         </configuration>
         <configuration apiMode="FULL_API" id="4febd31c-fdbc-4f12-b0aa-523cb06a6462" inuse="true" name="Config_SCI12">
             <allocatable id="SCI12">
-                <isocket id="PCLKB" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
-                <isocket id="PCLKA" selection="Clock.tool_clock_pclka" value="1.0E8"/>
+                <isocket id="PCLKB" selection="Clock.tool_clock_pclkb" value="6.0E7"/>
+                <isocket id="PCLKA" selection="Clock.tool_clock_pclka" value="1.2E8"/>
                 <option enabled="true" id="Direction" selection="LSB">
                     <item id="LSB" input="" vlaue="0"/>
                     <item id="MSB" input="" vlaue="0"/>
@@ -10855,7 +10851,7 @@
                     <item id="Div64" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="regBRR" selection="regBRR">
-                    <item id="regBRR" input="14" vlaue="12"/>
+                    <item id="regBRR" input="14" vlaue="14"/>
                 </option>
                 <option enabled="true" id="regMDDR" selection="regMDDR">
                     <item id="regMDDR" input="239" vlaue="128"/>
@@ -10876,9 +10872,9 @@
         </configuration>
         <configuration apiMode="FULL_API" id="74b6e535-82f5-4bbf-85e5-ef335c2409d7" inuse="true" name="Config_GPT3">
             <allocatable id="GPT3">
-                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="2.0E8"/>
-                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.0E8"/>
-                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="2.0E8"/>
+                <isocket id="CountClockI" selection="Clock.tool_clock_iclk" value="1.2E8"/>
+                <isocket id="CountClockA" selection="Clock.tool_clock_pclka" value="1.2E8"/>
+                <isocket id="CountClockC" selection="Clock.tool_clock_pclkc" value="1.2E8"/>
                 <option enabled="true" id="Mode" selection="SawPwmMode">
                     <item id="SawPwmMode" input="" vlaue="0"/>
                     <item id="SawOneShotMode" input="" vlaue="0"/>
@@ -10904,7 +10900,7 @@
                     <item id="GTETRGD" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TmrPrd" selection="TmrPrd">
-                    <item id="TmrPrd" input="100" vlaue="19999"/>
+                    <item id="TmrPrd" input="100" vlaue="11999"/>
                 </option>
                 <option enabled="true" id="GptUnit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -12297,341 +12293,6 @@
                         <item enabled="true" id="TrianglePwm1"/>
                         <item enabled="true" id="TrianglePwm2"/>
                         <item enabled="true" id="TrianglePwm3"/>
-                    </option>
-                </context>
-            </allocator>
-            <source description="コード生成に対応したコンポーネントは、設定に応じた周辺ドライバのコードを小さなコードサイズで出力します。" display="コード生成" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
-        </configuration>
-        <configuration apiMode="FULL_API" id="e4d60ed9-75ec-47c1-950c-d65ea7508fc5" inuse="true" name="Config_SCI11">
-            <allocatable id="SCI11">
-                <isocket id="CountingClockB" selection="Clock.tool_clock_pclka" value="1.0E8"/>
-                <option enabled="true" id="FIFOMode" selection="NonFIFO">
-                    <item id="NonFIFO" input="" vlaue="0"/>
-                    <item id="FIFO" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="DataLength" selection="8Bits">
-                    <item id="9Bits" input="" vlaue="0"/>
-                    <item id="8Bits" input="" vlaue="0"/>
-                    <item id="7Bits" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="Parity" selection="None">
-                    <item id="None" input="" vlaue="0"/>
-                    <item id="Even" input="" vlaue="0"/>
-                    <item id="Odd" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="StopBit" selection="1Bit">
-                    <item id="1Bit" input="" vlaue="0"/>
-                    <item id="2Bits" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransDir" selection="LSB">
-                    <item id="LSB" input="" vlaue="0"/>
-                    <item id="MSB" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransInstant" selection="Disable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransClock" selection="Internal">
-                    <item id="Internal" input="" vlaue="0"/>
-                    <item id="External" input="" vlaue="0"/>
-                </option>
-                <option enabled="false" id="BaseClk" selection="16Cyl">
-                    <item id="16Cyl" input="" vlaue="0"/>
-                    <item id="8Cyl" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="Bitrate" selection="FreeValue">
-                    <item id="FreeValue" input="9600" vlaue="9600"/>
-                    <item id="9600" input="9600" vlaue="0"/>
-                    <item id="19200" input="19200" vlaue="0"/>
-                    <item id="31250" input="31250" vlaue="0"/>
-                    <item id="38400" input="38400" vlaue="0"/>
-                    <item id="75000" input="75000" vlaue="0"/>
-                    <item id="150000" input="150000" vlaue="0"/>
-                    <item id="325000" input="325000" vlaue="0"/>
-                    <item id="375000" input="375000" vlaue="0"/>
-                </option>
-                <option enabled="true" id="DutyCorrection" selection="Disable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="SCKPinFun" selection="SckUnuse">
-                    <item id="SckUnuse" input="" vlaue="0"/>
-                    <item id="ClkOut" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="FlowControl" selection="None">
-                    <item id="None" input="" vlaue="0"/>
-                    <item id="CTS" input="" vlaue="0"/>
-                </option>
-                <option enabled="false" id="TransFIFONum" selection="Num0">
-                    <item id="Num0" input="" vlaue="0"/>
-                    <item id="Num1" input="" vlaue="0"/>
-                    <item id="Num2" input="" vlaue="0"/>
-                    <item id="Num3" input="" vlaue="0"/>
-                    <item id="Num4" input="" vlaue="0"/>
-                    <item id="Num5" input="" vlaue="0"/>
-                    <item id="Num6" input="" vlaue="0"/>
-                    <item id="Num7" input="" vlaue="0"/>
-                    <item id="Num8" input="" vlaue="0"/>
-                    <item id="Num9" input="" vlaue="0"/>
-                    <item id="Num10" input="" vlaue="0"/>
-                    <item id="Num11" input="" vlaue="0"/>
-                    <item id="Num12" input="" vlaue="0"/>
-                    <item id="Num13" input="" vlaue="0"/>
-                    <item id="Num14" input="" vlaue="0"/>
-                    <item id="Num15" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransDataHandle" selection="ISR">
-                    <item id="ISR" input="" vlaue="0"/>
-                    <item id="DMAC" input="" vlaue="0"/>
-                    <item id="DTC" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TXIPriority" selection="Level15">
-                    <item id="Level0" input="" vlaue="0"/>
-                    <item id="Level1" input="" vlaue="0"/>
-                    <item id="Level2" input="" vlaue="0"/>
-                    <item id="Level3" input="" vlaue="0"/>
-                    <item id="Level4" input="" vlaue="0"/>
-                    <item id="Level5" input="" vlaue="0"/>
-                    <item id="Level6" input="" vlaue="0"/>
-                    <item id="Level7" input="" vlaue="0"/>
-                    <item id="Level8" input="" vlaue="0"/>
-                    <item id="Level9" input="" vlaue="0"/>
-                    <item id="Level10" input="" vlaue="0"/>
-                    <item id="Level11" input="" vlaue="0"/>
-                    <item id="Level12" input="" vlaue="0"/>
-                    <item id="Level13" input="" vlaue="0"/>
-                    <item id="Level14" input="" vlaue="0"/>
-                    <item id="Level15" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="ERIPriority" selection="Level15">
-                    <item id="Level0" input="" vlaue="0"/>
-                    <item id="Level1" input="" vlaue="0"/>
-                    <item id="Level2" input="" vlaue="0"/>
-                    <item id="Level3" input="" vlaue="0"/>
-                    <item id="Level4" input="" vlaue="0"/>
-                    <item id="Level5" input="" vlaue="0"/>
-                    <item id="Level6" input="" vlaue="0"/>
-                    <item id="Level7" input="" vlaue="0"/>
-                    <item id="Level8" input="" vlaue="0"/>
-                    <item id="Level9" input="" vlaue="0"/>
-                    <item id="Level10" input="" vlaue="0"/>
-                    <item id="Level11" input="" vlaue="0"/>
-                    <item id="Level12" input="" vlaue="0"/>
-                    <item id="Level13" input="" vlaue="0"/>
-                    <item id="Level14" input="" vlaue="0"/>
-                    <item id="Level15" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="MultiIntTXIEnable" selection="UnCheck">
-                    <item id="Check" input="" vlaue="0"/>
-                    <item id="UnCheck" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="MultiIntTEIEnable" selection="UnCheck">
-                    <item id="Check" input="" vlaue="0"/>
-                    <item id="UnCheck" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransEnd" selection="Enable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-            </allocatable>
-            <component description="このソフトウェアコンポーネントは、SCI(SCIF、RSCI) シングル（マルチプロセッサ）調歩同期式の構成を提供します。" detailDescription="" display="SCI(SCIF)調歩同期式モード" id="com.renesas.smc.tools.swcomponent.codegenerator.sciasyncmode" version="1.12.0"/>
-            <allocator channelLevel0="11" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="SCI チャネル 11" display="SCI11" id="com.renesas.smc.swc.cg.sciasync.rx72t.sci11" type="SCI">
-                <context>
-                    <option enabled="true" id="Mode" selection="TransMode">
-                        <item enabled="true" id="TransMode"/>
-                        <item enabled="true" id="RecvMode"/>
-                        <item enabled="true" id="BothMode"/>
-                        <item enabled="true" id="MultiTransMode"/>
-                        <item enabled="true" id="MultiRecvMode"/>
-                        <item enabled="true" id="MultiBothMode"/>
-                    </option>
-                </context>
-            </allocator>
-            <source description="コード生成に対応したコンポーネントは、設定に応じた周辺ドライバのコードを小さなコードサイズで出力します。" display="コード生成" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
-        </configuration>
-        <configuration apiMode="FULL_API" id="a7a49814-d465-44d4-aa98-e35049c54124" inuse="true" name="Config_SCI6">
-            <allocatable id="SCI6">
-                <isocket id="CountingClockB" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
-                <option enabled="true" id="BitEdge" selection="LowLevel">
-                    <item id="LowLevel" input="" vlaue="0"/>
-                    <item id="FallEdge" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="DataLength" selection="8Bits">
-                    <item id="9Bits" input="" vlaue="0"/>
-                    <item id="8Bits" input="" vlaue="0"/>
-                    <item id="7Bits" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="Parity" selection="None">
-                    <item id="None" input="" vlaue="0"/>
-                    <item id="Even" input="" vlaue="0"/>
-                    <item id="Odd" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="StopBit" selection="1Bit">
-                    <item id="1Bit" input="" vlaue="0"/>
-                    <item id="2Bits" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransDir" selection="LSB">
-                    <item id="LSB" input="" vlaue="0"/>
-                    <item id="MSB" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransInstant" selection="Disable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransClock" selection="Internal">
-                    <item id="Internal" input="" vlaue="0"/>
-                    <item id="External" input="" vlaue="0"/>
-                    <item id="TMRClk" input="" vlaue="0"/>
-                </option>
-                <option enabled="false" id="BaseClk" selection="16Cyl">
-                    <item id="16Cyl" input="" vlaue="0"/>
-                    <item id="8Cyl" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="Bitrate" selection="FreeValue">
-                    <item id="FreeValue" input="9600" vlaue="9600"/>
-                    <item id="9600" input="9600" vlaue="0"/>
-                    <item id="19200" input="19200" vlaue="0"/>
-                    <item id="31250" input="31250" vlaue="0"/>
-                    <item id="38400" input="38400" vlaue="0"/>
-                    <item id="75000" input="75000" vlaue="0"/>
-                    <item id="150000" input="150000" vlaue="0"/>
-                    <item id="325000" input="325000" vlaue="0"/>
-                    <item id="375000" input="375000" vlaue="0"/>
-                </option>
-                <option enabled="true" id="DutyCorrection" selection="Disable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="SCKPinFun" selection="SckUnuse">
-                    <item id="SckUnuse" input="" vlaue="0"/>
-                    <item id="ClkOut" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="NoiseFilt" selection="Disable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="false" id="FiltClk" selection="Div1">
-                    <item id="Div1" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="FlowControl" selection="None">
-                    <item id="None" input="" vlaue="0"/>
-                    <item id="CTS" input="" vlaue="0"/>
-                    <item id="RTS" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="DataMatch" selection="Disable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="false" id="CmpData" selection="CmpData">
-                    <item id="CmpData" input="0x00" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransDataHandle" selection="ISR">
-                    <item id="ISR" input="" vlaue="0"/>
-                    <item id="DMAC" input="" vlaue="0"/>
-                    <item id="DTC" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="RecvDataHandle" selection="ISR">
-                    <item id="ISR" input="" vlaue="0"/>
-                    <item id="DMAC" input="" vlaue="0"/>
-                    <item id="DTC" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TXIPriority" selection="Level15">
-                    <item id="Level0" input="" vlaue="0"/>
-                    <item id="Level1" input="" vlaue="0"/>
-                    <item id="Level2" input="" vlaue="0"/>
-                    <item id="Level3" input="" vlaue="0"/>
-                    <item id="Level4" input="" vlaue="0"/>
-                    <item id="Level5" input="" vlaue="0"/>
-                    <item id="Level6" input="" vlaue="0"/>
-                    <item id="Level7" input="" vlaue="0"/>
-                    <item id="Level8" input="" vlaue="0"/>
-                    <item id="Level9" input="" vlaue="0"/>
-                    <item id="Level10" input="" vlaue="0"/>
-                    <item id="Level11" input="" vlaue="0"/>
-                    <item id="Level12" input="" vlaue="0"/>
-                    <item id="Level13" input="" vlaue="0"/>
-                    <item id="Level14" input="" vlaue="0"/>
-                    <item id="Level15" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="RXIPriority" selection="Level15">
-                    <item id="Level0" input="" vlaue="0"/>
-                    <item id="Level1" input="" vlaue="0"/>
-                    <item id="Level2" input="" vlaue="0"/>
-                    <item id="Level3" input="" vlaue="0"/>
-                    <item id="Level4" input="" vlaue="0"/>
-                    <item id="Level5" input="" vlaue="0"/>
-                    <item id="Level6" input="" vlaue="0"/>
-                    <item id="Level7" input="" vlaue="0"/>
-                    <item id="Level8" input="" vlaue="0"/>
-                    <item id="Level9" input="" vlaue="0"/>
-                    <item id="Level10" input="" vlaue="0"/>
-                    <item id="Level11" input="" vlaue="0"/>
-                    <item id="Level12" input="" vlaue="0"/>
-                    <item id="Level13" input="" vlaue="0"/>
-                    <item id="Level14" input="" vlaue="0"/>
-                    <item id="Level15" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="ERIEnable" selection="Enable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="ERIPriority" selection="Level15">
-                    <item id="Level0" input="" vlaue="0"/>
-                    <item id="Level1" input="" vlaue="0"/>
-                    <item id="Level2" input="" vlaue="0"/>
-                    <item id="Level3" input="" vlaue="0"/>
-                    <item id="Level4" input="" vlaue="0"/>
-                    <item id="Level5" input="" vlaue="0"/>
-                    <item id="Level6" input="" vlaue="0"/>
-                    <item id="Level7" input="" vlaue="0"/>
-                    <item id="Level8" input="" vlaue="0"/>
-                    <item id="Level9" input="" vlaue="0"/>
-                    <item id="Level10" input="" vlaue="0"/>
-                    <item id="Level11" input="" vlaue="0"/>
-                    <item id="Level12" input="" vlaue="0"/>
-                    <item id="Level13" input="" vlaue="0"/>
-                    <item id="Level14" input="" vlaue="0"/>
-                    <item id="Level15" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="MultiIntTXIEnable" selection="UnCheck">
-                    <item id="Check" input="" vlaue="0"/>
-                    <item id="UnCheck" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="MultiIntTEIEnable" selection="UnCheck">
-                    <item id="Check" input="" vlaue="0"/>
-                    <item id="UnCheck" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="MultiIntRXIEnable" selection="UnCheck">
-                    <item id="Check" input="" vlaue="0"/>
-                    <item id="UnCheck" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="MultiIntERIEnable" selection="UnCheck">
-                    <item id="Check" input="" vlaue="0"/>
-                    <item id="UnCheck" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="TransEnd" selection="Enable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="RecvEnd" selection="Enable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-                <option enabled="true" id="RecvError" selection="Enable">
-                    <item id="Enable" input="" vlaue="0"/>
-                    <item id="Disable" input="" vlaue="0"/>
-                </option>
-            </allocatable>
-            <component description="このソフトウェアコンポーネントは、SCI(SCIF、RSCI) シングル（マルチプロセッサ）調歩同期式の構成を提供します。" detailDescription="" display="SCI(SCIF)調歩同期式モード" id="com.renesas.smc.tools.swcomponent.codegenerator.sciasyncmode" version="1.12.0"/>
-            <allocator channelLevel0="6" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="SCI チャネル 6" display="SCI6" id="com.renesas.smc.swc.cg.sciasync.rx72t.sci6" type="SCI">
-                <context>
-                    <option enabled="true" id="Mode" selection="BothMode">
-                        <item enabled="true" id="TransMode"/>
-                        <item enabled="true" id="RecvMode"/>
-                        <item enabled="true" id="BothMode"/>
-                        <item enabled="true" id="MultiTransMode"/>
-                        <item enabled="true" id="MultiRecvMode"/>
-                        <item enabled="true" id="MultiBothMode"/>
                     </option>
                 </context>
             </allocator>

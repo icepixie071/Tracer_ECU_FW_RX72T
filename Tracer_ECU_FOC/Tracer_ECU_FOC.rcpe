@@ -203,16 +203,6 @@
           <Path>src\smc_gen\Config_SCI12\Config_SCI12.h</Path>
           <Path>src\smc_gen\Config_SCI12\Config_SCI12_user.c</Path>
         </Category>
-        <Category Name="Config_SCI11">
-          <Path>src\smc_gen\Config_SCI11\Config_SCI11.c</Path>
-          <Path>src\smc_gen\Config_SCI11\Config_SCI11.h</Path>
-          <Path>src\smc_gen\Config_SCI11\Config_SCI11_user.c</Path>
-        </Category>
-        <Category Name="Config_SCI6">
-          <Path>src\smc_gen\Config_SCI6\Config_SCI6.c</Path>
-          <Path>src\smc_gen\Config_SCI6\Config_SCI6.h</Path>
-          <Path>src\smc_gen\Config_SCI6\Config_SCI6_user.c</Path>
-        </Category>
       </Category>
     </Files>
     <DebugOptions>
@@ -230,8 +220,6 @@
           <Option>-isa=rxv3</Option>
           <Option>-fpu</Option>
           <Option>-lang=c99</Option>
-          <Option>-include=src\smc_gen\Config_SCI6</Option>
-          <Option>-include=src\smc_gen\Config_SCI11</Option>
           <Option>-include=src\smc_gen\Config_SCI12</Option>
           <Option>-include=src\smc_gen\Config_MTU9</Option>
           <Option>-include=src\smc_gen\Config_MTU0</Option>
@@ -261,7 +249,9 @@
           <Option>-include=src\smc_gen\Config_ICU</Option>
           <Option>-debug</Option>
           <Option>-g_line</Option>
-          <Option>-tfu=intrinsic</Option>
+          <Option>-optimize=1</Option>
+          <Option>-speed</Option>
+          <Option>-tfu=intrinsic,mathlib</Option>
           <Option>-nologo</Option>
           <Option>-asmopt=-bank</Option>
           <Option>-output=obj=%BuildModeName%\%FileLeaf%.obj</Option>
@@ -293,8 +283,10 @@
           <Option>-isa=rxv3</Option>
           <Option>-fpu</Option>
           <Option>-lang=c99</Option>
-          <Option>-head=runtime,stdio,stdlib,string,new</Option>
+          <Option>-head=runtime,math,mathf,stdio,stdlib,string,new</Option>
           <Option>-output=%BuildModeName%\%ProjectName%.lib</Option>
+          <Option>-optimize=1</Option>
+          <Option>-speed</Option>
           <Option>-nologo</Option>
           <GenerateMode>BuildOptionChanged</GenerateMode>
         </LibraryGenerateOptions>
@@ -360,14 +352,8 @@
           <Path>DefaultBuild\Config_MTU9_user.obj</Path>
           <Path>DefaultBuild\Config_SCI12.obj</Path>
           <Path>DefaultBuild\Config_SCI12_user.obj</Path>
-          <Path>DefaultBuild\Config_SCI11.obj</Path>
-          <Path>DefaultBuild\Config_SCI11_user.obj</Path>
-          <Path>DefaultBuild\Config_SCI6.obj</Path>
-          <Path>DefaultBuild\Config_SCI6_user.obj</Path>
         </LinkOrder>
         <CommonOptions>
-          <IncludePathForC>src\smc_gen\Config_SCI6</IncludePathForC>
-          <IncludePathForC>src\smc_gen\Config_SCI11</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_SCI12</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_MTU9</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_MTU0</IncludePathForC>
