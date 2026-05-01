@@ -206,8 +206,9 @@
       </Category>
     </Files>
     <DebugOptions>
-      <DebugTool>Simulator</DebugTool>
-      <ConnectSettings />
+      <ConnectSettings>
+        <MainClock>20000000</MainClock>
+      </ConnectSettings>
       <DebugToolSettings />
     </DebugOptions>
     <Device Series="RX">R5F572TFAxFP</Device>
