@@ -7,8 +7,13 @@
   </Placeholders>
   <Project Name="Tracer_ECU_FOC" Type="Application">
     <Files>
-      <Path>Tracer_ECU_FOC.c</Path>
+      <Path>main.c</Path>
       <Category Name="Smart Configurator">
+        <Category Name="Config_PORT">
+          <Path>src\smc_gen\Config_PORT\Config_PORT.c</Path>
+          <Path>src\smc_gen\Config_PORT\Config_PORT.h</Path>
+          <Path>src\smc_gen\Config_PORT\Config_PORT_user.c</Path>
+        </Category>
         <Category Name="Config_ICU">
           <Path>src\smc_gen\Config_ICU\Config_ICU.c</Path>
           <Path>src\smc_gen\Config_ICU\Config_ICU.h</Path>
@@ -33,11 +38,6 @@
           <Path>src\smc_gen\Config_MTU6_MTU7\Config_MTU6_MTU7.c</Path>
           <Path>src\smc_gen\Config_MTU6_MTU7\Config_MTU6_MTU7.h</Path>
           <Path>src\smc_gen\Config_MTU6_MTU7\Config_MTU6_MTU7_user.c</Path>
-        </Category>
-        <Category Name="Config_PORT">
-          <Path>src\smc_gen\Config_PORT\Config_PORT.c</Path>
-          <Path>src\smc_gen\Config_PORT\Config_PORT.h</Path>
-          <Path>src\smc_gen\Config_PORT\Config_PORT_user.c</Path>
         </Category>
         <Category Name="Config_RSPI0">
           <Path>src\smc_gen\Config_RSPI0\Config_RSPI0.c</Path>
@@ -64,6 +64,41 @@
           <Path>src\smc_gen\Config_WDT\Config_WDT.h</Path>
           <Path>src\smc_gen\Config_WDT\Config_WDT_user.c</Path>
         </Category>
+        <Category Name="Config_GPT0">
+          <Path>src\smc_gen\Config_GPT0\Config_GPT0.c</Path>
+          <Path>src\smc_gen\Config_GPT0\Config_GPT0.h</Path>
+          <Path>src\smc_gen\Config_GPT0\Config_GPT0_user.c</Path>
+        </Category>
+        <Category Name="Config_GPT1">
+          <Path>src\smc_gen\Config_GPT1\Config_GPT1.c</Path>
+          <Path>src\smc_gen\Config_GPT1\Config_GPT1.h</Path>
+          <Path>src\smc_gen\Config_GPT1\Config_GPT1_user.c</Path>
+        </Category>
+        <Category Name="Config_GPT2">
+          <Path>src\smc_gen\Config_GPT2\Config_GPT2.c</Path>
+          <Path>src\smc_gen\Config_GPT2\Config_GPT2.h</Path>
+          <Path>src\smc_gen\Config_GPT2\Config_GPT2_user.c</Path>
+        </Category>
+        <Category Name="Config_GPT3">
+          <Path>src\smc_gen\Config_GPT3\Config_GPT3.c</Path>
+          <Path>src\smc_gen\Config_GPT3\Config_GPT3.h</Path>
+          <Path>src\smc_gen\Config_GPT3\Config_GPT3_user.c</Path>
+        </Category>
+        <Category Name="Config_MTU0">
+          <Path>src\smc_gen\Config_MTU0\Config_MTU0.c</Path>
+          <Path>src\smc_gen\Config_MTU0\Config_MTU0.h</Path>
+          <Path>src\smc_gen\Config_MTU0\Config_MTU0_user.c</Path>
+        </Category>
+        <Category Name="Config_MTU9">
+          <Path>src\smc_gen\Config_MTU9\Config_MTU9.c</Path>
+          <Path>src\smc_gen\Config_MTU9\Config_MTU9.h</Path>
+          <Path>src\smc_gen\Config_MTU9\Config_MTU9_user.c</Path>
+        </Category>
+        <Category Name="Config_SCI12">
+          <Path>src\smc_gen\Config_SCI12\Config_SCI12.c</Path>
+          <Path>src\smc_gen\Config_SCI12\Config_SCI12.h</Path>
+          <Path>src\smc_gen\Config_SCI12\Config_SCI12_user.c</Path>
+        </Category>
         <Category Name="general">
           <Path>src\smc_gen\general\r_cg_hardware_setup.c</Path>
           <Path>src\smc_gen\general\r_cg_icu.h</Path>
@@ -82,6 +117,7 @@
           <Path>src\smc_gen\general\r_smc_interrupt.h</Path>
           <Path>src\smc_gen\general\r_cg_gpt.h</Path>
           <Path>src\smc_gen\general\r_cg_sci.h</Path>
+          <Path>src\smc_gen\general\r_cg_cmt.h</Path>
         </Category>
         <Category Name="r_bsp">
           <Path>src\smc_gen\r_bsp\platform.h</Path>
@@ -168,40 +204,10 @@
           <Path>src\smc_gen\r_pincfg\Pin.c</Path>
           <Path>src\smc_gen\r_pincfg\Pin.h</Path>
         </Category>
-        <Category Name="Config_GPT0">
-          <Path>src\smc_gen\Config_GPT0\Config_GPT0.c</Path>
-          <Path>src\smc_gen\Config_GPT0\Config_GPT0.h</Path>
-          <Path>src\smc_gen\Config_GPT0\Config_GPT0_user.c</Path>
-        </Category>
-        <Category Name="Config_GPT1">
-          <Path>src\smc_gen\Config_GPT1\Config_GPT1.c</Path>
-          <Path>src\smc_gen\Config_GPT1\Config_GPT1.h</Path>
-          <Path>src\smc_gen\Config_GPT1\Config_GPT1_user.c</Path>
-        </Category>
-        <Category Name="Config_GPT2">
-          <Path>src\smc_gen\Config_GPT2\Config_GPT2.c</Path>
-          <Path>src\smc_gen\Config_GPT2\Config_GPT2.h</Path>
-          <Path>src\smc_gen\Config_GPT2\Config_GPT2_user.c</Path>
-        </Category>
-        <Category Name="Config_GPT3">
-          <Path>src\smc_gen\Config_GPT3\Config_GPT3.c</Path>
-          <Path>src\smc_gen\Config_GPT3\Config_GPT3.h</Path>
-          <Path>src\smc_gen\Config_GPT3\Config_GPT3_user.c</Path>
-        </Category>
-        <Category Name="Config_MTU0">
-          <Path>src\smc_gen\Config_MTU0\Config_MTU0.c</Path>
-          <Path>src\smc_gen\Config_MTU0\Config_MTU0.h</Path>
-          <Path>src\smc_gen\Config_MTU0\Config_MTU0_user.c</Path>
-        </Category>
-        <Category Name="Config_MTU9">
-          <Path>src\smc_gen\Config_MTU9\Config_MTU9.c</Path>
-          <Path>src\smc_gen\Config_MTU9\Config_MTU9.h</Path>
-          <Path>src\smc_gen\Config_MTU9\Config_MTU9_user.c</Path>
-        </Category>
-        <Category Name="Config_SCI12">
-          <Path>src\smc_gen\Config_SCI12\Config_SCI12.c</Path>
-          <Path>src\smc_gen\Config_SCI12\Config_SCI12.h</Path>
-          <Path>src\smc_gen\Config_SCI12\Config_SCI12_user.c</Path>
+        <Category Name="Config_CMT0">
+          <Path>src\smc_gen\Config_CMT0\Config_CMT0.c</Path>
+          <Path>src\smc_gen\Config_CMT0\Config_CMT0.h</Path>
+          <Path>src\smc_gen\Config_CMT0\Config_CMT0_user.c</Path>
         </Category>
       </Category>
     </Files>
@@ -221,6 +227,7 @@
           <Option>-isa=rxv3</Option>
           <Option>-fpu</Option>
           <Option>-lang=c99</Option>
+          <Option>-include=src\smc_gen\Config_CMT0</Option>
           <Option>-include=src\smc_gen\Config_SCI12</Option>
           <Option>-include=src\smc_gen\Config_MTU9</Option>
           <Option>-include=src\smc_gen\Config_MTU0</Option>
@@ -292,7 +299,6 @@
           <GenerateMode>BuildOptionChanged</GenerateMode>
         </LibraryGenerateOptions>
         <LinkOrder>
-          <Path>DefaultBuild\Tracer_ECU_FOC.obj</Path>
           <Path>DefaultBuild\Config_ICU.obj</Path>
           <Path>DefaultBuild\Config_ICU_user.obj</Path>
           <Path>DefaultBuild\Config_MTU1.obj</Path>
@@ -353,8 +359,12 @@
           <Path>DefaultBuild\Config_MTU9_user.obj</Path>
           <Path>DefaultBuild\Config_SCI12.obj</Path>
           <Path>DefaultBuild\Config_SCI12_user.obj</Path>
+          <Path>DefaultBuild\main.obj</Path>
+          <Path>DefaultBuild\Config_CMT0.obj</Path>
+          <Path>DefaultBuild\Config_CMT0_user.obj</Path>
         </LinkOrder>
         <CommonOptions>
+          <IncludePathForC>src\smc_gen\Config_CMT0</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_SCI12</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_MTU9</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_MTU0</IncludePathForC>

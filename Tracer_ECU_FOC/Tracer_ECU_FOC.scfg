@@ -267,7 +267,7 @@
         <Item currentVect="23" id="FCU_FRDYI" priority="15" usedState="未使用"/>
         <Item currentVect="26" id="ICU_SWINT2" priority="15" usedState="未使用"/>
         <Item currentVect="27" id="ICU_SWINT" priority="15" usedState="未使用"/>
-        <Item currentVect="28" id="CMT0_CMI0" priority="15" usedState="未使用"/>
+        <Item currentVect="28" id="CMT0_CMI0" priority="15" usedState="使用中"/>
         <Item currentVect="29" id="CMT1_CMI1" priority="15" usedState="未使用"/>
         <Item currentVect="30" id="CMT2_CMI2" priority="15" usedState="未使用"/>
         <Item currentVect="31" id="CMT3_CMI3" priority="15" usedState="未使用"/>
@@ -1503,7 +1503,7 @@
                     <item id="25" input="" vlaue="0"/>
                     <item id="0" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ResetInterruptRequest" selection="NmiInt">
+                <option enabled="true" id="ResetInterruptRequest" selection="Res">
                     <item id="NmiInt" input="" vlaue="0"/>
                     <item id="Int" input="" vlaue="0"/>
                     <item id="Res" input="" vlaue="0"/>
@@ -12295,6 +12295,57 @@
                         <item enabled="true" id="TrianglePwm3"/>
                     </option>
                 </context>
+            </allocator>
+            <source description="コード生成に対応したコンポーネントは、設定に応じた周辺ドライバのコードを小さなコードサイズで出力します。" display="コード生成" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+        </configuration>
+        <configuration apiMode="FULL_API" id="a1e0bd32-5653-4e69-af03-6e37446a490b" inuse="true" name="Config_CMT0">
+            <allocatable id="CMT0">
+                <isocket id="CountingClock" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <option enabled="true" id="ClockDivision" selection="Devide8">
+                    <item id="Devide8" input="" vlaue="0"/>
+                    <item id="Devide32" input="" vlaue="0"/>
+                    <item id="Devide128" input="" vlaue="0"/>
+                    <item id="Devide512" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="IntervalValue" selection="IntervalValue">
+                    <item id="IntervalValue" input="100" vlaue="624"/>
+                </option>
+                <option enabled="true" id="IntervalUnit" selection="us">
+                    <item id="ms" input="" vlaue="0"/>
+                    <item id="us" input="" vlaue="0"/>
+                    <item id="ns" input="" vlaue="0"/>
+                    <item id="Count" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="IntCMWIEnable" selection="Enable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="MultiIntCMIEnable" selection="UnCheck">
+                    <item id="Check" input="" vlaue="0"/>
+                    <item id="UnCheck" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="IntCMWIPriority" selection="Level15">
+                    <item id="Level0" input="" vlaue="0"/>
+                    <item id="Level1" input="" vlaue="0"/>
+                    <item id="Level2" input="" vlaue="0"/>
+                    <item id="Level3" input="" vlaue="0"/>
+                    <item id="Level4" input="" vlaue="0"/>
+                    <item id="Level5" input="" vlaue="0"/>
+                    <item id="Level6" input="" vlaue="0"/>
+                    <item id="Level7" input="" vlaue="0"/>
+                    <item id="Level8" input="" vlaue="0"/>
+                    <item id="Level9" input="" vlaue="0"/>
+                    <item id="Level10" input="" vlaue="0"/>
+                    <item id="Level11" input="" vlaue="0"/>
+                    <item id="Level12" input="" vlaue="0"/>
+                    <item id="Level13" input="" vlaue="0"/>
+                    <item id="Level14" input="" vlaue="0"/>
+                    <item id="Level15" input="" vlaue="0"/>
+                </option>
+            </allocatable>
+            <component description="このソフトウェアコンポーネントは、コンペアマッチタイマ(CMT) /コンペアマッチタイマW (CMTW)モジュールの16/32ビットタイマの構成を提供します。&#10;&#10;設定した間隔で割り込みを発生させることができます。" detailDescription="" display="コンペアマッチタイマ" id="com.renesas.smc.tools.swcomponent.codegenerator.cmtw" version="2.3.0"/>
+            <allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="コンペアマッチタイマ(ユニット0)" display="CMT0" id="com.renesas.smc.swc.cg.rx.cmtw.cmt0" type="CMT">
+                <context/>
             </allocator>
             <source description="コード生成に対応したコンポーネントは、設定に応じた周辺ドライバのコードを小さなコードサイズで出力します。" display="コード生成" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
         </configuration>
