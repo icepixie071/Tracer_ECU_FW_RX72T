@@ -48,8 +48,11 @@ void R_Config_MTU2_Create(void)
     MTU.TSTRA.BIT.CST2 = 0U;
 
     /* Set external clock noise filter */
-    MTU0.NFCRC.BIT.NFCEN = 0U;
-    MTU0.NFCRC.BIT.NFDEN = 0U;
+    MTU0.NFCRC.BIT.NFCEN = 1U;
+    MTU0.NFCRC.BIT.NFDEN = 1U;
+
+    /* Select noise filter clock PCLK/32 */
+    MTU0.NFCRC.BIT.NFCS = 0x03U;
 
     /* Set A/D conversion signal output for ADSM0, ADSM1 pins */
     MTU.TADSTRGR0.BYTE = _00_MTU_TADSMEN_DISABLE;

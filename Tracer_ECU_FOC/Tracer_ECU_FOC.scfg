@@ -395,7 +395,7 @@
         <Item currentVect="229" defaultVect="229" id="MTU4_TGIB4" priority="15" usedState="未使用"/>
         <Item currentVect="230" defaultVect="230" id="MTU4_TGIC4" priority="15" usedState="未使用"/>
         <Item currentVect="231" defaultVect="231" id="MTU4_TGID4" priority="15" usedState="未使用"/>
-        <Item currentVect="232" defaultVect="232" id="MTU4_TCIV4" priority="15" usedState="未使用"/>
+        <Item currentVect="232" defaultVect="232" id="MTU4_TCIV4" priority="10" usedState="使用中"/>
         <Item currentVect="233" defaultVect="233" id="MTU5_TGIU5" priority="15" usedState="未使用"/>
         <Item currentVect="234" defaultVect="234" id="MTU5_TGIV5" priority="15" usedState="未使用"/>
         <Item currentVect="235" defaultVect="235" id="MTU5_TGIW5" priority="15" usedState="未使用"/>
@@ -513,11 +513,11 @@
                     <item id="Cmppwm2" input="" vlaue="0"/>
                     <item id="Cmppwm3" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="Synch" selection="Disable">
+                <option enabled="true" id="Synch" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ClrSrc" selection="Disabled">
+                <option enabled="true" id="ClrSrc" selection="sync">
                     <item id="Disabled" input="" vlaue="0"/>
                     <item id="sync" input="" vlaue="0"/>
                 </option>
@@ -554,7 +554,7 @@
                     <item id="PCLK_32" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="PeriodValue" selection="PeriodValue">
-                    <item id="PeriodValue" input="100" vlaue="20000"/>
+                    <item id="PeriodValue" input="50" vlaue="10000"/>
                 </option>
                 <option enabled="true" id="Unit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -562,30 +562,30 @@
                     <item id="ns" input="" vlaue="0"/>
                     <item id="cnt" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="DdTm" selection="Enable">
+                <option enabled="true" id="DdTm" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="DdTmValue" selection="DdTmValue">
-                    <item id="DdTmValue" input="10" vlaue="2000"/>
+                <option enabled="false" id="DdTmValue" selection="DdTmValue">
+                    <item id="DdTmValue" input="0" vlaue="10"/>
                 </option>
-                <option enabled="true" id="Unit1" selection="us">
+                <option enabled="false" id="Unit1" selection="ns">
                     <item id="ms" input="" vlaue="0"/>
                     <item id="us" input="" vlaue="0"/>
                     <item id="ns" input="" vlaue="0"/>
                     <item id="cnt" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TGRAValue" selection="TGRAValue">
-                    <item id="TGRAValue" input="100" vlaue="12000"/>
+                    <item id="TGRAValue" input="100" vlaue="5001"/>
                 </option>
                 <option enabled="true" id="TGRBValue" selection="TGRBValue">
-                    <item id="TGRBValue" input="100" vlaue="100"/>
+                    <item id="TGRBValue" input="2501" vlaue="2501"/>
                 </option>
                 <option enabled="true" id="TGRA4Value" selection="TGRA4Value">
-                    <item id="TGRA4Value" input="100" vlaue="100"/>
+                    <item id="TGRA4Value" input="2501" vlaue="2501"/>
                 </option>
                 <option enabled="true" id="TGRB4Value" selection="TGRB4Value">
-                    <item id="TGRB4Value" input="100" vlaue="100"/>
+                    <item id="TGRB4Value" input="2501" vlaue="2501"/>
                 </option>
                 <option enabled="true" id="CmpDC" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
@@ -607,7 +607,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="BufTr" selection="DisTr">
+                <option enabled="true" id="BufTr" selection="bth">
                     <item id="DisTr" input="" vlaue="0"/>
                     <item id="top" input="" vlaue="0"/>
                     <item id="low" input="" vlaue="0"/>
@@ -617,7 +617,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="U3B" selection="actL">
+                <option enabled="true" id="U3B" selection="actH">
                     <item id="actL" input="" vlaue="0"/>
                     <item id="actH" input="" vlaue="0"/>
                 </option>
@@ -633,7 +633,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="4AP" selection="4APL">
+                <option enabled="true" id="4AP" selection="4APH">
                     <item id="4APL" input="" vlaue="0"/>
                     <item id="4APH" input="" vlaue="0"/>
                 </option>
@@ -649,7 +649,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="W4B" selection="W4BL">
+                <option enabled="true" id="W4B" selection="W4BH">
                     <item id="W4BL" input="" vlaue="0"/>
                     <item id="W4BH" input="" vlaue="0"/>
                 </option>
@@ -773,11 +773,11 @@
                     <item id="Level14" input="" vlaue="0"/>
                     <item id="Level15" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="Tciv4" selection="Disable">
+                <option enabled="true" id="Tciv4" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="false" id="PrioV4" selection="Level15">
+                <option enabled="true" id="PrioV4" selection="Level10">
                     <item id="Level0" input="" vlaue="0"/>
                     <item id="Level1" input="" vlaue="0"/>
                     <item id="Level2" input="" vlaue="0"/>
@@ -795,7 +795,7 @@
                     <item id="Level14" input="" vlaue="0"/>
                     <item id="Level15" input="" vlaue="0"/>
                 </option>
-                <option enabled="false" id="IntSkp4" selection="SkDis">
+                <option enabled="true" id="IntSkp4" selection="SkDis">
                     <item id="SkDis" input="" vlaue="0"/>
                     <item id="Sk1" input="" vlaue="0"/>
                     <item id="Sk2" input="" vlaue="0"/>
@@ -821,7 +821,7 @@
                     <item id="Check" input="" vlaue="0"/>
                     <item id="UnCheck" input="" vlaue="0"/>
                 </option>
-                <option enabled="false" id="MultiIntTciv4Enable" selection="UnCheck">
+                <option enabled="true" id="MultiIntTciv4Enable" selection="Check">
                     <item id="Check" input="" vlaue="0"/>
                     <item id="UnCheck" input="" vlaue="0"/>
                 </option>
@@ -979,11 +979,11 @@
                     <item id="Cmppwm2" input="" vlaue="0"/>
                     <item id="Cmppwm3" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="Synch" selection="Disable">
+                <option enabled="true" id="Synch" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ClrSrc" selection="Disabled">
+                <option enabled="true" id="ClrSrc" selection="sync">
                     <item id="Disabled" input="" vlaue="0"/>
                     <item id="sync" input="" vlaue="0"/>
                 </option>
@@ -1020,7 +1020,7 @@
                     <item id="PCLK_32" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="PeriodValue" selection="PeriodValue">
-                    <item id="PeriodValue" input="100" vlaue="20000"/>
+                    <item id="PeriodValue" input="50" vlaue="10000"/>
                 </option>
                 <option enabled="true" id="Unit" selection="us">
                     <item id="ms" input="" vlaue="0"/>
@@ -1028,30 +1028,30 @@
                     <item id="ns" input="" vlaue="0"/>
                     <item id="cnt" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="DdTm" selection="Enable">
+                <option enabled="true" id="DdTm" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="DdTmValue" selection="DdTmValue">
-                    <item id="DdTmValue" input="10" vlaue="2000"/>
+                <option enabled="false" id="DdTmValue" selection="DdTmValue">
+                    <item id="DdTmValue" input="0" vlaue="10"/>
                 </option>
-                <option enabled="true" id="Unit1" selection="us">
+                <option enabled="false" id="Unit1" selection="ns">
                     <item id="ms" input="" vlaue="0"/>
                     <item id="us" input="" vlaue="0"/>
                     <item id="ns" input="" vlaue="0"/>
                     <item id="cnt" input="" vlaue="0"/>
                 </option>
                 <option enabled="true" id="TGRAValue" selection="TGRAValue">
-                    <item id="TGRAValue" input="100" vlaue="12000"/>
+                    <item id="TGRAValue" input="100" vlaue="5001"/>
                 </option>
                 <option enabled="true" id="TGRBValue" selection="TGRBValue">
-                    <item id="TGRBValue" input="100" vlaue="100"/>
+                    <item id="TGRBValue" input="2501" vlaue="2501"/>
                 </option>
                 <option enabled="true" id="TGRA4Value" selection="TGRA4Value">
-                    <item id="TGRA4Value" input="100" vlaue="100"/>
+                    <item id="TGRA4Value" input="2501" vlaue="2501"/>
                 </option>
                 <option enabled="true" id="TGRB4Value" selection="TGRB4Value">
-                    <item id="TGRB4Value" input="100" vlaue="100"/>
+                    <item id="TGRB4Value" input="2501" vlaue="2501"/>
                 </option>
                 <option enabled="true" id="CmpDC" selection="Disable">
                     <item id="Enable" input="" vlaue="0"/>
@@ -1073,7 +1073,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="BufTr" selection="DisTr">
+                <option enabled="true" id="BufTr" selection="bth">
                     <item id="DisTr" input="" vlaue="0"/>
                     <item id="top" input="" vlaue="0"/>
                     <item id="low" input="" vlaue="0"/>
@@ -1083,7 +1083,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="U3B" selection="actL">
+                <option enabled="true" id="U3B" selection="actH">
                     <item id="actL" input="" vlaue="0"/>
                     <item id="actH" input="" vlaue="0"/>
                 </option>
@@ -1099,7 +1099,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="4AP" selection="4APL">
+                <option enabled="true" id="4AP" selection="4APH">
                     <item id="4APL" input="" vlaue="0"/>
                     <item id="4APH" input="" vlaue="0"/>
                 </option>
@@ -1115,7 +1115,7 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="W4B" selection="W4BL">
+                <option enabled="true" id="W4B" selection="W4BH">
                     <item id="W4BL" input="" vlaue="0"/>
                     <item id="W4BH" input="" vlaue="0"/>
                 </option>
@@ -2624,15 +2624,15 @@
                     <item id="PhaseCount4" input="" vlaue="0"/>
                     <item id="PhaseCount5_0" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ExtNoiseA" selection="Disable">
+                <option enabled="true" id="ExtNoiseA" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ExtNoiseB" selection="Disable">
+                <option enabled="true" id="ExtNoiseB" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="false" id="ExtNoiseClk" selection="PCLK">
+                <option enabled="true" id="ExtNoiseClk" selection="PCLK_32">
                     <item id="PCLK" input="" vlaue="0"/>
                     <item id="PCLK_2" input="" vlaue="0"/>
                     <item id="PCLK_8" input="" vlaue="0"/>
@@ -2916,15 +2916,15 @@
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ExtNoiseC" selection="Disable">
+                <option enabled="true" id="ExtNoiseC" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ExtNoiseD" selection="Disable">
+                <option enabled="true" id="ExtNoiseD" selection="Enable">
                     <item id="Enable" input="" vlaue="0"/>
                     <item id="Disable" input="" vlaue="0"/>
                 </option>
-                <option enabled="false" id="ExtNoiseClk" selection="PCLK">
+                <option enabled="true" id="ExtNoiseClk" selection="PCLK_32">
                     <item id="PCLK" input="" vlaue="0"/>
                     <item id="PCLK_2" input="" vlaue="0"/>
                     <item id="PCLK_8" input="" vlaue="0"/>
@@ -3174,13 +3174,13 @@
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqType" selection="Low">
+                    <option enabled="true" id="IrqType" selection="Rising">
                         <item id="Low" input="" vlaue="0"/>
                         <item id="Falling" input="" vlaue="0"/>
                         <item id="Rising" input="" vlaue="0"/>
                         <item id="Both" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqFlt" selection="NoFlt">
+                    <option enabled="true" id="IrqFlt" selection="Div64">
                         <item id="NoFlt" input="" vlaue="0"/>
                         <item id="Div1" input="" vlaue="0"/>
                         <item id="Div8" input="" vlaue="0"/>
@@ -3326,13 +3326,13 @@
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqType" selection="Low">
+                    <option enabled="true" id="IrqType" selection="Rising">
                         <item id="Low" input="" vlaue="0"/>
                         <item id="Falling" input="" vlaue="0"/>
                         <item id="Rising" input="" vlaue="0"/>
                         <item id="Both" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqFlt" selection="NoFlt">
+                    <option enabled="true" id="IrqFlt" selection="Div64">
                         <item id="NoFlt" input="" vlaue="0"/>
                         <item id="Div1" input="" vlaue="0"/>
                         <item id="Div8" input="" vlaue="0"/>
@@ -3364,13 +3364,13 @@
                         <item id="Enable" input="" vlaue="0"/>
                         <item id="Disable" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqType" selection="Low">
+                    <option enabled="true" id="IrqType" selection="Rising">
                         <item id="Low" input="" vlaue="0"/>
                         <item id="Falling" input="" vlaue="0"/>
                         <item id="Rising" input="" vlaue="0"/>
                         <item id="Both" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqFlt" selection="NoFlt">
+                    <option enabled="true" id="IrqFlt" selection="Div64">
                         <item id="NoFlt" input="" vlaue="0"/>
                         <item id="Div1" input="" vlaue="0"/>
                         <item id="Div8" input="" vlaue="0"/>
@@ -3750,7 +3750,7 @@
                         <item id="Rising" input="" vlaue="0"/>
                         <item id="Both" input="" vlaue="0"/>
                     </option>
-                    <option enabled="true" id="IrqFlt" selection="NoFlt">
+                    <option enabled="true" id="IrqFlt" selection="Div64">
                         <item id="NoFlt" input="" vlaue="0"/>
                         <item id="Div1" input="" vlaue="0"/>
                         <item id="Div8" input="" vlaue="0"/>

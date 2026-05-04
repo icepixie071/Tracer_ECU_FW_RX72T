@@ -27,13 +27,12 @@ Macro definitions (Register bit)
 Macro definitions
 ***********************************************************************************************************************/
 #define MTU6_PCLK_COUNTER_DIVISION      (1)
-#define _07D0_6TCNT_VALUE               (0x07D0U) /* MTU6.TCNT value */
-#define _07D0_TDDRB_VALUE               (0x07D0U) /* MTU.TDDRB value */
-#define _2710_TCDRB_VALUE               (0x2710U) /* MTU.TCDRB value */
-#define _0064_6TGRB_VALUE               (0x0064U) /* MTU6.TGRB value */
-#define _0064_7TGRA_VALUE               (0x0064U) /* MTU7.TGRA value */
-#define _0064_7TGRB_VALUE               (0x0064U) /* MTU7.TGRB value */
-#define _2EE0_SUM_VALUE                 (0x2EE0U) /* Timer General Register (TGR) value */
+#define _000A_6TCNT_VALUE               (0x000AU) /* MTU6.TCNT value */
+#define _1388_TCDRB_VALUE               (0x1388U) /* MTU.TCDRB value */
+#define _09C5_6TGRB_VALUE               (0x09C5U) /* MTU6.TGRB value */
+#define _09C5_7TGRA_VALUE               (0x09C5U) /* MTU7.TGRA value */
+#define _09C5_7TGRB_VALUE               (0x09C5U) /* MTU7.TGRB value */
+#define _1389_SUM_VALUE                 (0x1389U) /* Timer General Register (TGR) value */
 
 /***********************************************************************************************************************
 Typedef definitions
