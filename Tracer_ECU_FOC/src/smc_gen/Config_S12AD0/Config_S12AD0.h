@@ -27,7 +27,7 @@ Macro definitions (Register bit)
 Macro definitions
 ***********************************************************************************************************************/
 #define _00C9_AD_PGA_STABLE_WAIT_COUNT     (0x00C9U) /* PGA stabilization 5us wait time */
-#define _001B_AD0_DSH_SAMPLING_STATE       (0x001BU) /* Dedicated sample-and-hold circuit sampling time setting */
+#define _001F_CSH_STABLE_WAIT_COUNT     (0x001FU) /* CSH stabilization 750ns wait time */
 #define _1B_AD0_SAMPLING_STATE_0           (0x1BU)   /* AN000 sampling time setting */
 #define _1B_AD0_SAMPLING_STATE_1           (0x1BU)   /* AN001 sampling time setting */
 #define _1B_AD0_SAMPLING_STATE_2           (0x1BU)   /* AN002 sampling time setting */

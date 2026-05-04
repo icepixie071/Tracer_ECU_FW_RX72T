@@ -699,14 +699,14 @@ Configuration Options
    NOTE: These macros have no effect if a product without PGA pseudo-differential input ("0xB" or "0xF" selected 
          as the value of BSP_CFG_MCU_PART_FUNCTION) is selected.
 */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN000     (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN001     (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN002     (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_PGAVSS0   (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN100     (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN101     (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN102     (1) /* Generated value. Do not edit this manually */
-#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_PGAVSS1   (1) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN000     (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN001     (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN002     (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_PGAVSS0   (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN100     (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN101     (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_AN102     (0) /* Generated value. Do not edit this manually */
+#define BSP_CFG_AD_NEGATIVE_VOLTAGE_INPUT_PGAVSS1   (0) /* Generated value. Do not edit this manually */
 
 /* Allow initialization of auto-generated peripheral initialization code by Smart Configurator tool.
    When not using the Smart Configurator, set the value of BSP_CFG_CONFIGURATOR_SELECT to 0.
