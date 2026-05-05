@@ -297,8 +297,8 @@
         <Item currentVect="79" id="ICU_IRQ15" priority="15" usedState="使用中"/>
         <Item currentVect="84" id="SCI5_RXI5" priority="15" usedState="未使用"/>
         <Item currentVect="85" id="SCI5_TXI5" priority="15" usedState="未使用"/>
-        <Item currentVect="86" id="SCI6_RXI6" priority="15" usedState="未使用"/>
-        <Item currentVect="87" id="SCI6_TXI6" priority="15" usedState="未使用"/>
+        <Item currentVect="86" id="SCI6_RXI6" priority="15" usedState="使用中"/>
+        <Item currentVect="87" id="SCI6_TXI6" priority="15" usedState="使用中"/>
         <Item currentVect="88" id="LVD1_LVD1" priority="15" usedState="未使用"/>
         <Item currentVect="89" id="LVD2_LVD2" priority="15" usedState="未使用"/>
         <Item currentVect="90" id="USB0_USBR0" priority="15" usedState="未使用"/>
@@ -328,7 +328,7 @@
         <Item currentVect="132" id="S12AD1_S12ADI1" priority="15" usedState="未使用"/>
         <Item currentVect="133" id="S12AD1_S12GBADI1" priority="15" usedState="未使用"/>
         <Item currentVect="134" id="S12AD1_S12GCADI1" priority="15" usedState="未使用"/>
-        <Item currentVect="136" id="S12AD2_S12ADI2" priority="15" usedState="使用中"/>
+        <Item currentVect="136" id="S12AD2_S12ADI2" priority="15" usedState="未使用"/>
         <Item currentVect="137" id="S12AD2_S12GBADI2" priority="15" usedState="未使用"/>
         <Item currentVect="138" id="S12AD2_S12GCADI2" priority="15" usedState="未使用"/>
         <Item currentVect="146" id="TMR0_CMIA0" priority="15" usedState="未使用"/>
@@ -422,83 +422,81 @@
     </tool>
     <tool id="Pins" version="1.0.1.0">
         <pinItem allocation="2" comments="" direction="None" id="EMLE" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="11" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="64" comments="" direction="None" id="IRQ15" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="33" comments="" direction="O" id="PB2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="30" comments="" direction="O" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="100" comments="" direction="None" id="IRQ0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="7" comments="" direction="None" id="IRQ4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="57" comments="" direction="None" id="IRQ5" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="32" comments="" direction="None" id="RSPCKA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="19" comments="" direction="None" id="TMS" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="56" comments="" direction="None" id="MTIOC3B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="53" comments="" direction="None" id="MTIOC3D" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="11" comments="" direction="None" id="XTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="36" comments="" direction="None" id="MISOA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="67" comments="" direction="None" id="SMISO12" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="13" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="85" comments="" direction="None" id="AN100" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="84" comments="" direction="None" id="AN101" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="83" comments="" direction="None" id="AN102" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="82" comments="" direction="None" id="AN103" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="98" comments="" direction="None" id="RXD6" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="55" comments="" direction="None" id="MTIOC4A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="54" comments="" direction="None" id="MTIOC4B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="52" comments="" direction="None" id="MTIOC4C" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="51" comments="" direction="None" id="MTIOC4D" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="66" comments="" direction="None" id="SMOSI12" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="69" comments="" direction="None" id="AN216" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="91" comments="" direction="None" id="PGAVSS0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="68" comments="" direction="None" id="AN217" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="86" comments="" direction="None" id="PGAVSS1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="71" comments="" direction="None" id="AN210" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="70" comments="" direction="None" id="AN211" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="38" comments="" direction="None" id="SSLA0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="27" comments="" direction="None" id="GTIOC2A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="39" comments="" direction="None" id="SSLA1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="17" comments="" direction="None" id="SSLA2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="16" comments="" direction="None" id="SSLA3" isUsedBySoftware="false" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="64" comments="" direction="None" id="IRQ15" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="26" comments="" direction="None" id="GTIOC1B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="90" comments="" direction="None" id="AN000" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="25" comments="" direction="None" id="GTIOC1A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="89" comments="" direction="None" id="AN001" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="88" comments="" direction="None" id="AN002" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="87" comments="" direction="None" id="AN003" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="18" comments="" direction="None" id="TRST#" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="99" comments="" direction="None" id="GTIOC3B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="1" comments="" direction="None" id="GTIOC3A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="43" comments="" direction="O" id="P96" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="28" comments="" direction="None" id="GTIOC2B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="46" comments="" direction="None" id="MTIOC7A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="33" comments="" direction="O" id="PB2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="47" comments="" direction="None" id="MTIOC7B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="58" comments="" direction="None" id="MTCLKA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="49" comments="" direction="None" id="MTIOC7C" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="30" comments="" direction="O" id="PB4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="59" comments="" direction="None" id="MTCLKB" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="50" comments="" direction="None" id="MTIOC7D" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="10" comments="" direction="None" id="RES#" isUsedBySoftware="false" locked="false" operationMode="" status="0"/>
         <pinItem allocation="8" comments="" direction="None" id="MTCLKC" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="9" comments="" direction="None" id="MTCLKD" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="65" comments="" direction="I" id="P24" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="6" comments="" direction="None" id="MD" isUsedBySoftware="false" locked="false" operationMode="" status="0"/>
         <pinItem allocation="61" comments="" direction="None" id="MTIOC0A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="34" comments="" direction="None" id="MTIOC0C" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="35" comments="" direction="None" id="MOSIA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="63" comments="" direction="I" id="P30" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="24" comments="" direction="None" id="GTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="23" comments="" direction="None" id="GTIOC0A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="21" comments="" direction="None" id="TCK" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="4" comments="" direction="None" id="MTIOC9A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="100" comments="" direction="None" id="IRQ0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="7" comments="" direction="None" id="IRQ4" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="57" comments="" direction="None" id="IRQ5" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="78" comments="" direction="None" id="AN203" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="97" comments="" direction="None" id="TXD6" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="77" comments="" direction="None" id="AN206" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="76" comments="" direction="None" id="AN207" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="75" comments="" direction="None" id="AN208" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="74" comments="" direction="None" id="AN209" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="20" comments="" direction="None" id="TDI" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="81" comments="" direction="None" id="AN200" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="80" comments="" direction="None" id="AN201" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="22" comments="" direction="None" id="TDO" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="79" comments="" direction="None" id="AN202" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="36" comments="" direction="None" id="MISOA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="13" comments="" direction="None" id="EXTAL" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="38" comments="" direction="None" id="SSLA0" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="39" comments="" direction="None" id="SSLA1" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="17" comments="" direction="None" id="SSLA2" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="16" comments="" direction="None" id="SSLA3" isUsedBySoftware="false" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="18" comments="" direction="None" id="TRST#" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="46" comments="" direction="None" id="MTIOC7A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="47" comments="" direction="None" id="MTIOC7B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="49" comments="" direction="None" id="MTIOC7C" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="50" comments="" direction="None" id="MTIOC7D" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="65" comments="" direction="I" id="P24" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="63" comments="" direction="I" id="P30" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="24" comments="" direction="None" id="GTIOC0B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="23" comments="" direction="None" id="GTIOC0A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="4" comments="" direction="None" id="MTIOC9A" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="45" comments="" direction="None" id="MTIOC6B" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="48" comments="" direction="None" id="MTIOC6D" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="66" comments="" direction="None" id="SMOSI12" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="43" comments="" direction="O" id="P96" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="10" comments="" direction="None" id="RES#" isUsedBySoftware="false" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="35" comments="" direction="None" id="MOSIA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="21" comments="" direction="None" id="TCK" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="20" comments="" direction="None" id="TDI" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
+        <pinItem allocation="22" comments="" direction="None" id="TDO" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
         <pinItem allocation="96" comments="" direction="None" id="SCK12" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="32" comments="" direction="None" id="RSPCKA" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
-        <pinItem allocation="19" comments="" direction="None" id="TMS" isUsedBySoftware="true" locked="false" operationMode="" status="0"/>
     </tool>
     <tool id="Summary" version="1.0.0.0">
         <option id="com.renesas.smc.code.path" value="src\smc_gen"/>
@@ -3847,11 +3845,11 @@
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx02" selection="Use">
+                <option enabled="true" id="ANx02" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx03" selection="Use">
+                <option enabled="true" id="ANx03" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
@@ -3926,11 +3924,11 @@
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx02_Add" selection="Unuse">
+                <option enabled="false" id="ANx02_Add" selection="Use">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx03_Add" selection="Unuse">
+                <option enabled="false" id="ANx03_Add" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
@@ -3968,7 +3966,7 @@
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AN002DSHchk" selection="Unuse">
+                <option enabled="false" id="AN002DSHchk" selection="Use">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
@@ -3992,7 +3990,7 @@
                     <item id="ANx-Px" input="" vlaue="0"/>
                     <item id="Px-Px" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpGain0" selection="2_500">
+                <option enabled="true" id="AmpGain0" selection="2_000">
                     <item id="2_000" input="" vlaue="0"/>
                     <item id="2_500" input="" vlaue="0"/>
                     <item id="3_077" input="" vlaue="0"/>
@@ -4038,7 +4036,7 @@
                     <item id="7_000" input="" vlaue="0"/>
                     <item id="12_333" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpPath2" selection="Dis">
+                <option enabled="false" id="AmpPath2" selection="PxANxPx">
                     <item id="Dis" input="" vlaue="0"/>
                     <item id="ANx--" input="" vlaue="0"/>
                     <item id="-ANx-" input="" vlaue="0"/>
@@ -4050,7 +4048,7 @@
                     <item id="ANx-Px" input="" vlaue="0"/>
                     <item id="Px-Px" input="" vlaue="0"/>
                 </option>
-                <option enabled="false" id="AmpGain2" selection="4_000">
+                <option enabled="false" id="AmpGain2" selection="2_000">
                     <item id="2_000" input="" vlaue="0"/>
                     <item id="2_500" input="" vlaue="0"/>
                     <item id="3_077" input="" vlaue="0"/>
@@ -4183,10 +4181,10 @@
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
                     <item id="ANx01_Sampling" input="0.54" vlaue="27"/>
                 </option>
-                <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
+                <option enabled="false" id="ANx02_Sampling" selection="ANx02_Sampling">
                     <item id="ANx02_Sampling" input="0.54" vlaue="27"/>
                 </option>
-                <option enabled="true" id="ANx03_Sampling" selection="ANx03_Sampling">
+                <option enabled="false" id="ANx03_Sampling" selection="ANx03_Sampling">
                     <item id="ANx03_Sampling" input="0.54" vlaue="27"/>
                 </option>
                 <option enabled="false" id="ANx07_Sampling" selection="ANx07_Sampling">
@@ -4254,11 +4252,11 @@
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx02" selection="Use">
+                <option enabled="true" id="ANx02" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx03" selection="Use">
+                <option enabled="true" id="ANx03" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
@@ -4333,11 +4331,11 @@
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx02_Add" selection="Use">
+                <option enabled="false" id="ANx02_Add" selection="Use">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="ANx03_Add" selection="Use">
+                <option enabled="false" id="ANx03_Add" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
@@ -4375,19 +4373,19 @@
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AN002DSHchk" selection="Use">
+                <option enabled="false" id="AN002DSHchk" selection="Use">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="CSHchk" selection="Unuse">
+                <option enabled="true" id="CSHchk" selection="Use">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpInput" selection="pseudo">
+                <option enabled="true" id="AmpInput" selection="single">
                     <item id="single" input="" vlaue="0"/>
                     <item id="pseudo" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpPath0" selection="Px-Px">
+                <option enabled="true" id="AmpPath0" selection="PxANxPx">
                     <item id="Dis" input="" vlaue="0"/>
                     <item id="ANx--" input="" vlaue="0"/>
                     <item id="-ANx-" input="" vlaue="0"/>
@@ -4399,7 +4397,7 @@
                     <item id="ANx-Px" input="" vlaue="0"/>
                     <item id="Px-Px" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpGain0" selection="4_000">
+                <option enabled="true" id="AmpGain0" selection="2_000">
                     <item id="2_000" input="" vlaue="0"/>
                     <item id="2_500" input="" vlaue="0"/>
                     <item id="3_077" input="" vlaue="0"/>
@@ -4416,7 +4414,7 @@
                     <item id="7_000" input="" vlaue="0"/>
                     <item id="12_333" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpPath1" selection="Px-Px">
+                <option enabled="true" id="AmpPath1" selection="PxANxPx">
                     <item id="Dis" input="" vlaue="0"/>
                     <item id="ANx--" input="" vlaue="0"/>
                     <item id="-ANx-" input="" vlaue="0"/>
@@ -4428,7 +4426,7 @@
                     <item id="ANx-Px" input="" vlaue="0"/>
                     <item id="Px-Px" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpGain1" selection="4_000">
+                <option enabled="true" id="AmpGain1" selection="2_000">
                     <item id="2_000" input="" vlaue="0"/>
                     <item id="2_500" input="" vlaue="0"/>
                     <item id="3_077" input="" vlaue="0"/>
@@ -4445,7 +4443,7 @@
                     <item id="7_000" input="" vlaue="0"/>
                     <item id="12_333" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpPath2" selection="Px-Px">
+                <option enabled="false" id="AmpPath2" selection="PxANxPx">
                     <item id="Dis" input="" vlaue="0"/>
                     <item id="ANx--" input="" vlaue="0"/>
                     <item id="-ANx-" input="" vlaue="0"/>
@@ -4457,7 +4455,7 @@
                     <item id="ANx-Px" input="" vlaue="0"/>
                     <item id="Px-Px" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="AmpGain2" selection="4_000">
+                <option enabled="false" id="AmpGain2" selection="2_000">
                     <item id="2_000" input="" vlaue="0"/>
                     <item id="2_500" input="" vlaue="0"/>
                     <item id="3_077" input="" vlaue="0"/>
@@ -4581,7 +4579,7 @@
                     <item id="OutofRef0Ref1" input="" vlaue="0"/>
                     <item id="BetweenRef0Ref1" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="DSH_Sampling" selection="DSH_Sampling">
+                <option enabled="false" id="DSH_Sampling" selection="DSH_Sampling">
                     <item id="DSH_Sampling" input="0.54" vlaue="27"/>
                 </option>
                 <option enabled="true" id="ANx00_Sampling" selection="ANx00_Sampling">
@@ -4590,10 +4588,10 @@
                 <option enabled="true" id="ANx01_Sampling" selection="ANx01_Sampling">
                     <item id="ANx01_Sampling" input="0.54" vlaue="27"/>
                 </option>
-                <option enabled="true" id="ANx02_Sampling" selection="ANx02_Sampling">
+                <option enabled="false" id="ANx02_Sampling" selection="ANx02_Sampling">
                     <item id="ANx02_Sampling" input="0.54" vlaue="27"/>
                 </option>
-                <option enabled="true" id="ANx03_Sampling" selection="ANx03_Sampling">
+                <option enabled="false" id="ANx03_Sampling" selection="ANx03_Sampling">
                     <item id="ANx03_Sampling" input="0.54" vlaue="27"/>
                 </option>
                 <option enabled="false" id="ANx07_Sampling" selection="ANx07_Sampling">
@@ -4738,11 +4736,11 @@
                     <item id="ELCTRGX1N" input="" vlaue="0"/>
                     <item id="ELCTRGX01N" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="S12ADIchk" selection="Use">
+                <option enabled="true" id="S12ADIchk" selection="Unuse">
                     <item id="Use" input="" vlaue="0"/>
                     <item id="Unuse" input="" vlaue="0"/>
                 </option>
-                <option enabled="true" id="S12ADIPrity" selection="Level15">
+                <option enabled="false" id="S12ADIPrity" selection="Level15">
                     <item id="Level0" input="" vlaue="0"/>
                     <item id="Level1" input="" vlaue="0"/>
                     <item id="Level2" input="" vlaue="0"/>
@@ -12346,6 +12344,194 @@
             <component description="このソフトウェアコンポーネントは、コンペアマッチタイマ(CMT) /コンペアマッチタイマW (CMTW)モジュールの16/32ビットタイマの構成を提供します。&#10;&#10;設定した間隔で割り込みを発生させることができます。" detailDescription="" display="コンペアマッチタイマ" id="com.renesas.smc.tools.swcomponent.codegenerator.cmtw" version="2.3.0"/>
             <allocator channelLevel0="0" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="コンペアマッチタイマ(ユニット0)" display="CMT0" id="com.renesas.smc.swc.cg.rx.cmtw.cmt0" type="CMT">
                 <context/>
+            </allocator>
+            <source description="コード生成に対応したコンポーネントは、設定に応じた周辺ドライバのコードを小さなコードサイズで出力します。" display="コード生成" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
+        </configuration>
+        <configuration apiMode="FULL_API" id="933595ce-e199-43ef-9b71-e542ac05fa27" inuse="true" name="Config_SCI6">
+            <allocatable id="SCI6">
+                <isocket id="CountingClockB" selection="Clock.tool_clock_pclkb" value="5.0E7"/>
+                <option enabled="true" id="BitEdge" selection="LowLevel">
+                    <item id="LowLevel" input="" vlaue="0"/>
+                    <item id="FallEdge" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="DataLength" selection="8Bits">
+                    <item id="9Bits" input="" vlaue="0"/>
+                    <item id="8Bits" input="" vlaue="0"/>
+                    <item id="7Bits" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="Parity" selection="None">
+                    <item id="None" input="" vlaue="0"/>
+                    <item id="Even" input="" vlaue="0"/>
+                    <item id="Odd" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="StopBit" selection="1Bit">
+                    <item id="1Bit" input="" vlaue="0"/>
+                    <item id="2Bits" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="TransDir" selection="LSB">
+                    <item id="LSB" input="" vlaue="0"/>
+                    <item id="MSB" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="TransInstant" selection="Disable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="TransClock" selection="Internal">
+                    <item id="Internal" input="" vlaue="0"/>
+                    <item id="External" input="" vlaue="0"/>
+                    <item id="TMRClk" input="" vlaue="0"/>
+                </option>
+                <option enabled="false" id="BaseClk" selection="16Cyl">
+                    <item id="16Cyl" input="" vlaue="0"/>
+                    <item id="8Cyl" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="Bitrate" selection="FreeValue">
+                    <item id="FreeValue" input="9600" vlaue="9600"/>
+                    <item id="9600" input="9600" vlaue="0"/>
+                    <item id="19200" input="19200" vlaue="0"/>
+                    <item id="31250" input="31250" vlaue="0"/>
+                    <item id="38400" input="38400" vlaue="0"/>
+                    <item id="75000" input="75000" vlaue="0"/>
+                    <item id="150000" input="150000" vlaue="0"/>
+                    <item id="325000" input="325000" vlaue="0"/>
+                    <item id="375000" input="375000" vlaue="0"/>
+                </option>
+                <option enabled="true" id="DutyCorrection" selection="Disable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="SCKPinFun" selection="SckUnuse">
+                    <item id="SckUnuse" input="" vlaue="0"/>
+                    <item id="ClkOut" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="NoiseFilt" selection="Disable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="false" id="FiltClk" selection="Div1">
+                    <item id="Div1" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="FlowControl" selection="None">
+                    <item id="None" input="" vlaue="0"/>
+                    <item id="CTS" input="" vlaue="0"/>
+                    <item id="RTS" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="DataMatch" selection="Disable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="false" id="CmpData" selection="CmpData">
+                    <item id="CmpData" input="0x00" vlaue="0"/>
+                </option>
+                <option enabled="true" id="TransDataHandle" selection="ISR">
+                    <item id="ISR" input="" vlaue="0"/>
+                    <item id="DMAC" input="" vlaue="0"/>
+                    <item id="DTC" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="RecvDataHandle" selection="ISR">
+                    <item id="ISR" input="" vlaue="0"/>
+                    <item id="DMAC" input="" vlaue="0"/>
+                    <item id="DTC" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="TXIPriority" selection="Level15">
+                    <item id="Level0" input="" vlaue="0"/>
+                    <item id="Level1" input="" vlaue="0"/>
+                    <item id="Level2" input="" vlaue="0"/>
+                    <item id="Level3" input="" vlaue="0"/>
+                    <item id="Level4" input="" vlaue="0"/>
+                    <item id="Level5" input="" vlaue="0"/>
+                    <item id="Level6" input="" vlaue="0"/>
+                    <item id="Level7" input="" vlaue="0"/>
+                    <item id="Level8" input="" vlaue="0"/>
+                    <item id="Level9" input="" vlaue="0"/>
+                    <item id="Level10" input="" vlaue="0"/>
+                    <item id="Level11" input="" vlaue="0"/>
+                    <item id="Level12" input="" vlaue="0"/>
+                    <item id="Level13" input="" vlaue="0"/>
+                    <item id="Level14" input="" vlaue="0"/>
+                    <item id="Level15" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="RXIPriority" selection="Level15">
+                    <item id="Level0" input="" vlaue="0"/>
+                    <item id="Level1" input="" vlaue="0"/>
+                    <item id="Level2" input="" vlaue="0"/>
+                    <item id="Level3" input="" vlaue="0"/>
+                    <item id="Level4" input="" vlaue="0"/>
+                    <item id="Level5" input="" vlaue="0"/>
+                    <item id="Level6" input="" vlaue="0"/>
+                    <item id="Level7" input="" vlaue="0"/>
+                    <item id="Level8" input="" vlaue="0"/>
+                    <item id="Level9" input="" vlaue="0"/>
+                    <item id="Level10" input="" vlaue="0"/>
+                    <item id="Level11" input="" vlaue="0"/>
+                    <item id="Level12" input="" vlaue="0"/>
+                    <item id="Level13" input="" vlaue="0"/>
+                    <item id="Level14" input="" vlaue="0"/>
+                    <item id="Level15" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="ERIEnable" selection="Enable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="ERIPriority" selection="Level15">
+                    <item id="Level0" input="" vlaue="0"/>
+                    <item id="Level1" input="" vlaue="0"/>
+                    <item id="Level2" input="" vlaue="0"/>
+                    <item id="Level3" input="" vlaue="0"/>
+                    <item id="Level4" input="" vlaue="0"/>
+                    <item id="Level5" input="" vlaue="0"/>
+                    <item id="Level6" input="" vlaue="0"/>
+                    <item id="Level7" input="" vlaue="0"/>
+                    <item id="Level8" input="" vlaue="0"/>
+                    <item id="Level9" input="" vlaue="0"/>
+                    <item id="Level10" input="" vlaue="0"/>
+                    <item id="Level11" input="" vlaue="0"/>
+                    <item id="Level12" input="" vlaue="0"/>
+                    <item id="Level13" input="" vlaue="0"/>
+                    <item id="Level14" input="" vlaue="0"/>
+                    <item id="Level15" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="MultiIntTXIEnable" selection="UnCheck">
+                    <item id="Check" input="" vlaue="0"/>
+                    <item id="UnCheck" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="MultiIntTEIEnable" selection="UnCheck">
+                    <item id="Check" input="" vlaue="0"/>
+                    <item id="UnCheck" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="MultiIntRXIEnable" selection="UnCheck">
+                    <item id="Check" input="" vlaue="0"/>
+                    <item id="UnCheck" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="MultiIntERIEnable" selection="UnCheck">
+                    <item id="Check" input="" vlaue="0"/>
+                    <item id="UnCheck" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="TransEnd" selection="Enable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="RecvEnd" selection="Enable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+                <option enabled="true" id="RecvError" selection="Enable">
+                    <item id="Enable" input="" vlaue="0"/>
+                    <item id="Disable" input="" vlaue="0"/>
+                </option>
+            </allocatable>
+            <component description="このソフトウェアコンポーネントは、SCI(SCIF、RSCI) シングル（マルチプロセッサ）調歩同期式の構成を提供します。" detailDescription="" display="SCI(SCIF)調歩同期式モード" id="com.renesas.smc.tools.swcomponent.codegenerator.sciasyncmode" version="1.12.0"/>
+            <allocator channelLevel0="6" channelLevel1="" channelLevel2="" channelLevel3="" channelLevel4="" channelLevel5="" description="SCI チャネル 6" display="SCI6" id="com.renesas.smc.swc.cg.sciasync.rx72t.sci6" type="SCI">
+                <context>
+                    <option enabled="true" id="Mode" selection="BothMode">
+                        <item enabled="true" id="TransMode"/>
+                        <item enabled="true" id="RecvMode"/>
+                        <item enabled="true" id="BothMode"/>
+                        <item enabled="true" id="MultiTransMode"/>
+                        <item enabled="true" id="MultiRecvMode"/>
+                        <item enabled="true" id="MultiBothMode"/>
+                    </option>
+                </context>
             </allocator>
             <source description="コード生成に対応したコンポーネントは、設定に応じた周辺ドライバのコードを小さなコードサイズで出力します。" display="コード生成" id="com.renesas.smc.tools.swcomponent.codegenerator.source"/>
         </configuration>

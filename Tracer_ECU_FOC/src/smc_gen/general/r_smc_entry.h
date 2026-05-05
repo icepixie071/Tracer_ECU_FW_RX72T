@@ -38,6 +38,7 @@ Includes
 #include "Config_SCI12.h"
 #include "Config_GPT3.h"
 #include "Config_CMT0.h"
+#include "Config_SCI6.h"
 
 /***********************************************************************************************************************
 Macro definitions (Register bit)

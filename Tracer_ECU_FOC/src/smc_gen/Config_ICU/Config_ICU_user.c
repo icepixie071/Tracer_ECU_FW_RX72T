@@ -96,7 +96,12 @@ static void r_Config_ICU_irq4_interrupt(void)
 static void r_Config_ICU_irq5_interrupt(void)
 {
     /* Start user code for r_Config_ICU_irq5_interrupt. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
+	
+	MTU.TSTRA.BIT.CST1	= 0U;		// MTU ch1 counter stop
+	MTU1.TCNT 			= 0U;		// MTU ch1 counter init 	
+    MTU.TSTRA.BIT.CST1	= 1U;		// MTU ch1 counter start
+    
+	/* End user code. Do not edit comment generated here */
 }
 
 /***********************************************************************************************************************

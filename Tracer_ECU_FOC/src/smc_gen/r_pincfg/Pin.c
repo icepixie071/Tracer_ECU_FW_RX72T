@@ -52,16 +52,6 @@ void R_Pins_Create(void)
     PORT4.PDR.BYTE &= 0xFDU;
     MPC.P41PFS.BYTE = 0x80U;
 
-    /* Set AN002 pin */
-    PORT4.PMR.BYTE &= 0xFBU;
-    PORT4.PDR.BYTE &= 0xFBU;
-    MPC.P42PFS.BYTE = 0x80U;
-
-    /* Set AN003 pin */
-    PORT4.PMR.BYTE &= 0xF7U;
-    PORT4.PDR.BYTE &= 0xF7U;
-    MPC.P43PFS.BYTE = 0x80U;
-
     /* Set AN100 pin */
     PORT4.PMR.BYTE &= 0xEFU;
     PORT4.PDR.BYTE &= 0xEFU;
@@ -71,16 +61,6 @@ void R_Pins_Create(void)
     PORT4.PMR.BYTE &= 0xDFU;
     PORT4.PDR.BYTE &= 0xDFU;
     MPC.P45PFS.BYTE = 0x80U;
-
-    /* Set AN102 pin */
-    PORT4.PMR.BYTE &= 0xBFU;
-    PORT4.PDR.BYTE &= 0xBFU;
-    MPC.P46PFS.BYTE = 0x80U;
-
-    /* Set AN103 pin */
-    PORT4.PMR.BYTE &= 0x7FU;
-    PORT4.PDR.BYTE &= 0x7FU;
-    MPC.P47PFS.BYTE = 0x80U;
 
     /* Set AN200 pin */
     PORT5.PMR.BYTE &= 0xFBU;
@@ -292,6 +272,10 @@ void R_Pins_Create(void)
     MPC.PB3PFS.BYTE = 0x0DU;
     PORTB.PMR.BYTE |= 0x08U;
 
+    /* Set RXD6 pin */
+    MPC.P80PFS.BYTE = 0x0AU;
+    PORT8.PMR.BYTE |= 0x01U;
+
     /* Set SCK12 pin */
     MPC.P82PFS.BYTE = 0x0CU;
     PORT8.PMR.BYTE |= 0x04U;
@@ -319,6 +303,12 @@ void R_Pins_Create(void)
     /* Set SSLA3 pin */
     MPC.PE1PFS.BYTE = 0x0DU;
     PORTE.PMR.BYTE |= 0x02U;
+
+    /* Set TXD6 pin */
+    PORT8.PODR.BYTE |= 0x02U;
+    MPC.P81PFS.BYTE = 0x0AU;
+    PORT8.PDR.BYTE |= 0x02U;
+    // PORT8.PMR.BIT.B1 = 1U; // Please set the PMR bit after TE bit is set to 1.
 
     R_BSP_RegisterProtectEnable(BSP_REG_PROTECT_MPC);
 }

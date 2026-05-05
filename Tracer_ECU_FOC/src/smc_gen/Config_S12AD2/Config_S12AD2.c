@@ -48,8 +48,6 @@ void R_Config_S12AD2_Create(void)
     S12AD2.ADCSR.BIT.ADIE = 0U;
     S12AD2.ADCMPCR.BIT.CMPAIE = 0U;
     S12AD2.ADCMPCR.BIT.CMPBIE = 0U;
-    IR(S12AD2, S12ADI2) = 0U;
-    IEN(S12AD2, S12ADI2) = 0U;
 
     /* Set S12AD2 control registers */
     S12AD2.ADCSR.WORD = _0000_AD_SYNCASYNCTRG_DISABLE | _4000_AD_CONTINUOUS_SCAN_MODE;
@@ -73,14 +71,11 @@ void R_Config_S12AD2_Create(void)
     S12AD2.ADANSA1.WORD = _0001_AD_AN216_USED | _0002_AD_AN217_USED;
     S12AD2.ADCER.WORD = _0000_AD_AUTO_CLEARING_DISABLE | _0000_AD_SELFTDIAGST_DISABLE | _0000_AD_RIGHT_ALIGNMENT;
     S12AD2.ADELCCR.BYTE = _02_ALL_SCAN_COMPLETION;
-    S12AD2.ADCSR.WORD |= _1000_AD_SCAN_END_INTERRUPT_ENABLE;
+    S12AD2.ADCSR.WORD |= _0000_AD_SCAN_END_INTERRUPT_DISABLE;
     S12AD2.ADADC.BYTE = _00_AD_1_TIME_CONVERSION | _00_AD_ADDITION_MODE;
 
     /* Set compare control register */
     S12AD2.ADCMPCR.WORD = _0000_AD_WINDOWB_DISABLE | _0000_AD_WINDOWA_DISABLE | _0000_AD_WINDOWFUNCTION_DISABLE;
-
-    /* Set interrupt and priority level */
-    IPR(S12AD2, S12ADI2) = _0F_AD_PRIORITY_LEVEL15;
 
     /* Set AN200 pin */
     PORT5.PMR.BYTE &= 0xFBU;
@@ -154,8 +149,6 @@ void R_Config_S12AD2_Create(void)
 
 void R_Config_S12AD2_Start(void)
 {
-    IR(S12AD2, S12ADI2) = 0U;
-    IEN(S12AD2, S12ADI2) = 1U;
     S12AD2.ADCSR.BIT.ADST = 1U;
 }
 
@@ -169,8 +162,6 @@ void R_Config_S12AD2_Start(void)
 void R_Config_S12AD2_Stop(void)
 {
     S12AD2.ADCSR.BIT.ADST = 0U;
-    IEN(S12AD2, S12ADI2) = 0U;
-    IR(S12AD2, S12ADI2) = 0U;
 }
 
 /***********************************************************************************************************************

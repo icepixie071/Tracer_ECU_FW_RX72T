@@ -40,6 +40,7 @@ Includes
 #include "Config_SCI12.h"
 #include "Config_GPT3.h"
 #include "Config_CMT0.h"
+#include "Config_SCI6.h"
 #include "r_smc_cgc.h"
 #include "r_smc_interrupt.h"
 /* Start user code for include. Do not edit comment generated here */
@@ -113,6 +114,7 @@ void R_Systeminit(void)
     R_Config_SCI12_Create();
     R_Config_GPT3_Create();
     R_Config_CMT0_Create();
+    R_Config_SCI6_Create();
 
     /* Set interrupt settings */
     R_Interrupt_Create();
@@ -128,6 +130,12 @@ void R_Systeminit(void)
 
     /* Register group AL0 interrupt SPEI0 (RSPI0) */
     R_BSP_InterruptWrite(BSP_INT_SRC_AL0_RSPI0_SPEI0,(bsp_int_cb_t)r_Config_RSPI0_error_interrupt);
+
+    /* Register group BL0 interrupt TEI6 (SCI6) */
+    R_BSP_InterruptWrite(BSP_INT_SRC_BL0_SCI6_TEI6,(bsp_int_cb_t)r_Config_SCI6_transmitend_interrupt);
+
+    /* Register group BL0 interrupt ERI6 (SCI6) */
+    R_BSP_InterruptWrite(BSP_INT_SRC_BL0_SCI6_ERI6,(bsp_int_cb_t)r_Config_SCI6_receiveerror_interrupt);
 
     /* Register group BL0 interrupt TEI12 (SCI12) */
     R_BSP_InterruptWrite(BSP_INT_SRC_BL0_SCI12_TEI12,(bsp_int_cb_t)r_Config_SCI12_transmitend_interrupt);

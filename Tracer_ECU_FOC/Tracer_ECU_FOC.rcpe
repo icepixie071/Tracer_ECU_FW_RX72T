@@ -7,7 +7,11 @@
   </Placeholders>
   <Project Name="Tracer_ECU_FOC" Type="Application">
     <Files>
-      <Path>main.c</Path>
+      <Category Name="User">
+        <Path>src\user\main.c</Path>
+        <Path>src\user\User_MotorCtrl.c</Path>
+        <Path>src\user\User_MotorCtrl.h</Path>
+      </Category>
       <Category Name="Smart Configurator">
         <Category Name="Config_PORT">
           <Path>src\smc_gen\Config_PORT\Config_PORT.c</Path>
@@ -209,6 +213,11 @@
           <Path>src\smc_gen\Config_CMT0\Config_CMT0.h</Path>
           <Path>src\smc_gen\Config_CMT0\Config_CMT0_user.c</Path>
         </Category>
+        <Category Name="Config_SCI6">
+          <Path>src\smc_gen\Config_SCI6\Config_SCI6.c</Path>
+          <Path>src\smc_gen\Config_SCI6\Config_SCI6.h</Path>
+          <Path>src\smc_gen\Config_SCI6\Config_SCI6_user.c</Path>
+        </Category>
       </Category>
     </Files>
     <DebugOptions>
@@ -227,6 +236,8 @@
           <Option>-isa=rxv3</Option>
           <Option>-fpu</Option>
           <Option>-lang=c99</Option>
+          <Option>-include=src\user</Option>
+          <Option>-include=src\smc_gen\Config_SCI6</Option>
           <Option>-include=src\smc_gen\Config_CMT0</Option>
           <Option>-include=src\smc_gen\Config_SCI12</Option>
           <Option>-include=src\smc_gen\Config_MTU9</Option>
@@ -359,11 +370,16 @@
           <Path>DefaultBuild\Config_MTU9_user.obj</Path>
           <Path>DefaultBuild\Config_SCI12.obj</Path>
           <Path>DefaultBuild\Config_SCI12_user.obj</Path>
-          <Path>DefaultBuild\main.obj</Path>
           <Path>DefaultBuild\Config_CMT0.obj</Path>
           <Path>DefaultBuild\Config_CMT0_user.obj</Path>
+          <Path>DefaultBuild\Config_SCI6.obj</Path>
+          <Path>DefaultBuild\Config_SCI6_user.obj</Path>
+          <Path>DefaultBuild\main.obj</Path>
+          <Path>DefaultBuild\User_MotorCtrl.obj</Path>
         </LinkOrder>
         <CommonOptions>
+          <IncludePathForC>src\user</IncludePathForC>
+          <IncludePathForC>src\smc_gen\Config_SCI6</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_CMT0</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_SCI12</IncludePathForC>
           <IncludePathForC>src\smc_gen\Config_MTU9</IncludePathForC>

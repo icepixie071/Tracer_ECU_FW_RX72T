@@ -23,6 +23,7 @@ Includes
 #include "r_cg_macrodriver.h"
 #include "Config_MTU3_MTU4.h"
 /* Start user code for include. Do not edit comment generated here */
+#include "User_MotorCtrl.h"
 /* End user code. Do not edit comment generated here */
 #include "r_cg_userdefine.h"
 
@@ -63,6 +64,9 @@ static void r_Config_MTU3_MTU4_c4_tciv4_interrupt(void)
     R_BSP_SETPSW_I();
 
     /* Start user code for r_Config_MTU3_MTU4_c4_tciv4_interrupt. Do not edit comment generated here */
+	
+	User_Motor_Ctrl();
+	
     /* End user code. Do not edit comment generated here */
 }
 

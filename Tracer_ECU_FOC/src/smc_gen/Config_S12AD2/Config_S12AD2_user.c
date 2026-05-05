@@ -45,23 +45,5 @@ void R_Config_S12AD2_Create_UserInit(void)
     /* End user code. Do not edit comment generated here */
 }
 
-/***********************************************************************************************************************
-* Function Name: r_Config_S12AD2_interrupt
-* Description  : This function is S12ADI2 interrupt service routine
-* Arguments    : None
-* Return Value : None
-***********************************************************************************************************************/
-
-#if FAST_INTERRUPT_VECTOR == VECT_S12AD2_S12ADI2
-#pragma interrupt r_Config_S12AD2_interrupt(vect=VECT(S12AD2,S12ADI2),fint)
-#else
-#pragma interrupt r_Config_S12AD2_interrupt(vect=VECT(S12AD2,S12ADI2))
-#endif
-static void r_Config_S12AD2_interrupt(void)
-{
-    /* Start user code for r_Config_S12AD2_interrupt. Do not edit comment generated here */
-    /* End user code. Do not edit comment generated here */
-}
-
 /* Start user code for adding. Do not edit comment generated here */
 /* End user code. Do not edit comment generated here */

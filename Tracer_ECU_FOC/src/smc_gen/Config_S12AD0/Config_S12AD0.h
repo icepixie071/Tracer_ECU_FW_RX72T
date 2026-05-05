@@ -30,8 +30,6 @@ Macro definitions
 #define _001F_CSH_STABLE_WAIT_COUNT     (0x001FU) /* CSH stabilization 750ns wait time */
 #define _1B_AD0_SAMPLING_STATE_0           (0x1BU)   /* AN000 sampling time setting */
 #define _1B_AD0_SAMPLING_STATE_1           (0x1BU)   /* AN001 sampling time setting */
-#define _1B_AD0_SAMPLING_STATE_2           (0x1BU)   /* AN002 sampling time setting */
-#define _1B_AD0_SAMPLING_STATE_3           (0x1BU)   /* AN003 sampling time setting */
 
 /***********************************************************************************************************************
 Typedef definitions
