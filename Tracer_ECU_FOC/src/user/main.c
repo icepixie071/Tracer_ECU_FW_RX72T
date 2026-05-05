@@ -38,13 +38,14 @@ Includes
 #include "Config_MTU9.h"
 #include "Config_SCI12.h"
 #include "Config_CMT0.h"
+#include "Config_SCI6.h"
 
 /***********************************************************************************************************************
 Global variables and functions
 ***********************************************************************************************************************/
 void main(void)
 {
-	// init peripheral
+	// Init peripherals
 	R_Config_PORT_Create();
 	R_Config_ICU_Create();
 	R_Config_MTU1_Create();
@@ -64,9 +65,14 @@ void main(void)
 	R_Config_MTU9_Create();
 	R_Config_SCI12_Create();
 	R_Config_CMT0_Create();
+	R_Config_SCI6_Create();
 	
-	// start peripheral
-	R_Config_WDT_Create();
+	// Enable all gate drivers
+	PORTB.PODR.BIT.B2 = 1;
+	
+	// Start peripherals
+	R_Config_MTU3_MTU4_Start();
+	R_Config_MTU6_MTU7_Start();
 	
 	while(1)
 	{
